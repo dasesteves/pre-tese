@@ -1,0 +1,180 @@
+\usepackage[english, portuguese]{babel}
+\usepackage{fontspec}
+\usepackage{geometry}
+% Margens segundo normas UMinho: esquerda 3cm, direita 2.5cm, topo 3cm, fundo 2.5cm
+\geometry{top=3cm,bottom=2.5cm,right=2.5cm,left=3cm}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{titling}
+\usepackage[hidelinks]{hyperref}
+\usepackage{natbib}
+\usepackage{afterpage}
+\usepackage{datetime}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage{epigraph}
+\usepackage{datetime}
+\usepackage{caption}
+\usepackage[many]{tcolorbox} 
+\usepackage{tabularx}
+\usepackage{leading}
+\usepackage[capitalise]{cleveref} % Create better looking section cross-reference links
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{pgfgantt} % Para o Gantt chart
+\usepackage{ifthen} % Para comandos condicionais
+
+%-- Space between lines - melhorar espaçamento
+\renewcommand{\baselinestretch}{1.4}
+
+%-- Font News Got T (usar fonte padrão se não tiver disponível)
+\IfFontExistsTF{NewsGotT.ttf}{
+    \setmainfont{NewsGotT.ttf}
+    \setmainfont[
+    Ligatures=TeX,
+    AutoFakeSlant=0.20,
+    BoldFont=NewsGotTBold.ttf
+    ]{NewsGotT.ttf}
+    \newfontfamily\NewsGotTLight{NewsGotTLight.ttf}
+}{
+    % Usar fonte padrão se NewsGotT não estiver disponível
+    \setmainfont{Times New Roman}
+}
+
+%-- Cover - melhorar formatação e espaçamento
+\newcommand{\thelogo}{}
+\newcommand{\logo}[3]{\renewcommand{\thelogo}{
+\includegraphics[width=26mm]{images/logos/UM.jpg}\hspace{1mm}\includegraphics[width=26mm]{images/logos/#1.jpg}
+
+\vspace{8mm}
+\leading{18pt}
+{\large
+\textbf{Universidade do Minho}
+\\
+\vspace{1mm}
+{\NewsGotTLight
+#2
+\\
+#3
+}}
+
+\vspace{35mm}
+}}
+
+\newcommand{\thelogoB}{}
+\newcommand{\logoB}[3]{\renewcommand{\thelogoB}{
+\includegraphics[width=26mm]{images/logosB/UM.jpg}\hspace{1mm}\includegraphics[width=26mm]{images/logosB/#1.jpg}
+
+\vspace{8mm}
+\leading{18pt}
+{\large
+\textbf{Universidade do Minho}
+\\
+\vspace{1mm}
+{\NewsGotTLight
+#2
+\\
+#3
+}}
+
+\vspace{35mm}
+}}
+
+\newcommand{\thetitleA}{}
+\newcommand{\titleA}[1]{\renewcommand{\thetitleA}{#1}}
+
+\newcommand{\thetitleB}{}
+\newcommand{\titleB}[1]{\renewcommand{\thetitleB}{#1}}
+
+\newcommand{\thetitleC}{}
+\newcommand{\titleC}[1]{\renewcommand{\thetitleC}{#1}}
+
+\newcommand{\themasters}{}
+\newcommand{\masters}[1]{\renewcommand{\themasters}{#1 \\}}
+
+\newcommand{\thearea}{}
+\newcommand{\area}[1]{\renewcommand{\thearea}{#1 \\}}
+
+\newcommand{\thesupervisor}{}
+\newcommand{\supervisor}[1]{\renewcommand{\thesupervisor}{#1}}
+
+\newcommand{\thecosupervisor}{}
+\newcommand{\cosupervisor}[1]{\renewcommand{\thecosupervisor}{\textbf{#1}}}
+
+%-- Figures and Tables
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+%-- Date
+\def\myear{\ifcase\month\or
+ janeiro\or fevereiro\or mar\c{c}o\or abril\or maio\or junho\or
+ julho\or agosto\or setembro\or outubro\or novembro\or dezembro\fi
+ \space de \number\year}
+ 
+%--Colors 
+\usepackage{color}
+\usepackage{pagecolor}
+
+\definecolor{PANTONECoolGray7C}{HTML}{97999B}
+\definecolor{PANTONE1807C}{HTML}{A4343A}
+\definecolor{blueUM}{HTML}{24A2DA}
+
+%-- Hypersetup
+\hypersetup{
+    colorlinks = true,
+    linkcolor = blueUM,
+    citecolor = blueUM,
+    urlcolor = blueUM
+}
+
+%-- Title format - melhorar formatação dos títulos
+\titleformat{\chapter}[display]
+  {\relax}
+  {\Large\bfseries\chaptername~\thechapter}
+  {2ex}
+  {\LARGE\vspace{1ex}\bfseries}
+  [\vspace{1ex}]
+
+\titleformat{\section}
+  {\Large\bfseries}{\thesection}{1em}{}
+  [\vspace{0.5ex}]
+  
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{}
+  [\vspace{0.3ex}]
+  
+%-- Footnote format
+\ifdefined\deffootnote
+    \deffootnote{.5em}{0em}{\thefootnotemark
+    }
+\else
+    \PassOptionsToPackage{marginal}{footmisc}
+    \RequirePackage{footmisc}
+\fi
+\renewcommand{\footnotelayout}{\scriptsize}
+ 
+%-- Environments
+\newenvironment{backcover}{\begin{titlepage}}{\end{titlepage}}
+
+%-- Indexes
+\usepackage{imakeidx}
+
+\def\Latex{
+	\href{http://www.latex-project.org/}{\LaTeX}
+	\index{\LaTeX}}
+\newcommand{\tug}[1]{
+	\href{http://tug.org/}{#1}
+	\index{TeX!TeX Users Group (TUG)}}
+\newcommand{\TUG}{
+	\tug{TUG}}
+\newcommand{\uminho}[1]{
+     \href{http://www.uminho.pt}{#1}
+     \index{UM!Universidade do Minho}} 

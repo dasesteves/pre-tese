@@ -1,0 +1,106 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{pre-tese}
+\makeindex
+
+% Logo da Escola de Engenharia
+\logo{EE}{Escola de Engenharia}{}
+\logoB{EE}{Escola de Engenharia}{}
+
+\author{Diogo André da Silva Esteves}
+
+\titleA{Otimização e Padronização}
+\titleB{de Processos de Gestão}
+\titleC{Medicamentosa em Ambiente Hospitalar}
+
+\masters{Mestrado em Engenharia Bioinformática}
+% ATUALIZAR: Inserir nome real do orientador
+\supervisor{Prof. Dr. José Manuel Ferreira Machado}
+% ATUALIZAR: Inserir nome real do coorientador (opcional)
+\cosupervisor{Prof. Dr. Ana Regina Coelho de Sousa}
+
+\bibpunct[,]{(}{)}{;}{a}{,}{,}
+\begin{document}
+\setlength{\parindent}{0em}
+
+%-- Covers
+\input{covers/Covers}
+
+%-- Document setup
+\newgeometry{right=25mm, left=25mm, top=25mm, bottom=25mm}
+\pagenumbering{roman}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{1.5em}
+
+%-- Preamble
+\input{preamble/Abstract}
+\input{preamble/Acknowledgements}
+
+%-- Lista de Abreviaturas e Símbolos
+\chapter*{Lista de Abreviaturas e Símbolos}
+\addcontentsline{toc}{chapter}{Lista de Abreviaturas e Símbolos}
+
+\begin{description}
+\item[API] Application Programming Interface
+\item[CDSS] Clinical Decision Support System
+\item[CPOE] Computerized Physician Order Entry
+\item[EHR] Electronic Health Record
+\item[FHIR] Fast Healthcare Interoperability Resources
+\item[HL7] Health Level Seven
+\item[HIS] Hospital Information System
+\item[JWT] JSON Web Token
+\item[KPI] Key Performance Indicator
+\item[ML] Machine Learning
+\item[NLP] Natural Language Processing
+\item[RGPD] Regulamento Geral sobre a Proteção de Dados
+\item[ROI] Return on Investment
+\item[SCMVV] Santa Casa da Misericórdia de Vila Verde
+\item[SGBD] Sistema de Gestão de Base de Dados
+\item[SSO] Single Sign-On
+\item[TAM] Technology Acceptance Model
+\item[UI] User Interface
+\item[UX] User Experience
+\end{description}
+
+\cleardoublepage
+
+%-- Índices
+\phantomsection
+\addcontentsline{toc}{chapter}{Índice}
+\tableofcontents
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Lista de Figuras}
+\listoffigures
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Lista de Tabelas}
+\listoftables
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+%-- Capítulos da Pré-Tese
+\input{chapters/Introducao}
+\input{chapters/EstadoDaArte}
+\input{chapters/PlanoDeTrabalho}
+\input{chapters/Metodologia}
+\input{chapters/Resultados}
+\input{chapters/Discussao}
+\input{chapters/Conclusao}
+
+\renewcommand{\baselinestretch}{1}
+\bibliographystyle{plainnat}
+\bibliography{pre-tese}
+
+\appendix
+\renewcommand\chaptername{Apêndice}
+
+% Apêndices se necessário
+%\input{appendices/GanttChart}
+
+\input{covers/BackCover}
+
+\end{document} 

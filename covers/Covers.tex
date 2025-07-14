@@ -1,0 +1,56 @@
+% Front Cover
+\begin{titlepage}
+
+% Logos UMinho e Escola de Engenharia
+\hbox{\thelogo}
+
+% Título - com melhor espaçamento e hierarquia
+\vspace*{25mm}
+\begin{center}
+    {\huge\bfseries \thetitleA}
+    \vspace{3mm}
+    {\huge\bfseries \thetitleB}
+    \vspace{3mm}
+    {\huge\bfseries \thetitleC}
+\end{center}
+
+% Grau e área - com melhor espaçamento
+\vspace{25mm}
+\begin{center}
+    {\Large \themasters}
+\end{center}
+
+% Autor - com melhor posicionamento
+\vspace{20mm}
+\begin{center}
+    {\large \theauthor}
+\end{center}
+
+% Orientação - melhor posicionamento vertical
+\vspace{30mm}
+\begin{center}
+    {\footnotesize Trabalho efetuado sob a orientação de\\
+    \vspace{2mm}
+    \textbf{\thesupervisor}}
+    \ifthenelse{\equal{\thecosupervisor}{}}{}{\\
+    \vspace{2mm}
+    e coorientação de\\
+    \vspace{2mm}
+    \textbf{\thecosupervisor}}
+\end{center}
+
+% Local e data - com espaçamento adequado
+\vfill
+\vspace{15mm}
+\begin{center}
+    {\large Universidade do Minho, Escola de Engenharia}
+    \vspace{3mm}
+    {\large \myear}
+\end{center}
+
+\end{titlepage}
+
+% Página em branco para pré-tese
+\newpage
+\thispagestyle{empty}
+\mbox{} 

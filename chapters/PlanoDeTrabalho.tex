@@ -1,0 +1,179 @@
+\chapter{Plano de Trabalho}
+
+% [NOTA: Mover cronograma da introdução para cá e expandir]
+
+\section{Metodologia de Desenvolvimento}
+
+O projeto adotou uma metodologia ágil adaptada ao contexto hospitalar, combinando elementos de Scrum e Kanban com considerações específicas para sistemas críticos de saúde.
+
+\subsection{Princípios Metodológicos}
+
+\begin{enumerate}
+    \item \textbf{Desenvolvimento Incremental}: Entregas frequentes para validação contínua
+    \item \textbf{Envolvimento dos Utilizadores}: Profissionais de saúde como parte da equipa
+    \item \textbf{Prototipagem Rápida}: Validação precoce de conceitos
+    \item \textbf{Integração Contínua}: Testes automatizados e deployment controlado
+\end{enumerate}
+
+% [INSERIR: Figura 3.1 - Ciclo de desenvolvimento adaptado]
+
+\section{Fases do Projeto}
+
+\subsection{Fase 1: Análise e Planeamento (Janeiro-Fevereiro 2025)}
+
+\textbf{Objetivos:}
+- Levantamento detalhado de requisitos
+- Análise do sistema legado AIDA-PCE
+- Definição da arquitetura técnica
+
+\textbf{Deliverables:}
+- Documento de requisitos funcionais e não-funcionais
+- Mapeamento de processos AS-IS e TO-BE
+- Arquitetura de alto nível
+
+% [INSERIR: Tabela 3.1 - Matriz de requisitos priorizados]
+
+\textbf{Atividades Realizadas:}
+\begin{itemize}
+    \item Entrevistas com 15 profissionais (5 médicos, 5 enfermeiros, 5 farmacêuticos)
+    \item Observação de 40 horas de processos hospitalares
+    \item Análise de 10.000 prescrições históricas
+    \item Revisão de documentação técnica do AIDA
+\end{itemize}
+
+\subsection{Fase 2: Desenvolvimento da Infraestrutura Base (Março-Abril 2025)}
+
+\textbf{Objetivos:}
+- Configuração do ambiente de desenvolvimento
+- Implementação da camada de dados
+- Desenvolvimento do sistema de autenticação
+
+\textbf{Deliverables:}
+- Pool de conexões Oracle otimizado
+- Sistema JWT com gestão de sessões
+- APIs base para CRUD operations
+
+\textbf{Métricas:}
+- Tempo de resposta médio: <200ms
+- Conexões simultâneas suportadas: 500+
+- Cobertura de testes: >80\%
+
+\subsection{Fase 3: Módulo de Procura e Registo (Maio-Junho 2025)}
+
+\textbf{Objetivos:}
+- Interface de pesquisa de utentes
+- Sistema de registo de tratamentos
+- Integração com dados demográficos
+
+% [INSERIR: Figura 3.2 - Mockups das interfaces desenvolvidas]
+
+\textbf{Deliverables:}
+- Componente de pesquisa avançada
+- Formulários de registo validados
+- Dashboard de tratamentos ativos
+
+\subsection{Fase 4: Módulo de Farmácia (Julho-Agosto 2025)}
+
+\textbf{Objetivos:}
+- Sistema de validação de prescrições
+- Gestão de stocks em tempo real
+- Rastreabilidade de medicamentos
+
+\textbf{Deliverables:}
+- Interface de validação farmacêutica
+- Sistema de alertas de stock
+- Relatórios de consumo
+
+% [INSERIR: Tabela 3.2 - Funcionalidades do módulo de farmácia]
+
+\subsection{Fase 5: Integrações Externas (Setembro-Outubro 2025)}
+
+\textbf{Sistemas Integrados:}
+\begin{itemize}
+    \item \textbf{SONHO}: Exportação para faturação
+    \item \textbf{ADSE}: Verificação de elegibilidade
+    \item \textbf{RNU}: Validação de dados de utentes
+    \item \textbf{PEM}: Prescrição eletrónica nacional
+\end{itemize}
+
+\textbf{Desafios Técnicos:}
+- Mapeamento de schemas diferentes
+- Sincronização de dados em tempo real
+- Gestão de falhas de comunicação
+
+\subsection{Fase 6: Otimização e Testes (Novembro-Dezembro 2025)}
+
+\textbf{Atividades:}
+- Testes de carga e stress
+- Otimização de queries críticas
+- Melhorias de UX baseadas em feedback
+- Testes de aceitação com utilizadores
+
+% [INSERIR: Gráfico 3.1 - Resultados dos testes de performance]
+
+\subsection{Fase 7: Documentação e Preparação para Produção (Janeiro 2025)}
+
+\textbf{Deliverables Finais:}
+- Manual de utilizador por perfil
+- Documentação técnica completa
+- Plano de migração detalhado
+- Procedimentos de disaster recovery
+
+\section{Gestão de Riscos}
+
+% [INSERIR: Tabela 3.3 - Matriz de riscos com probabilidade e impacto]
+
+\subsection{Riscos Identificados e Mitigações}
+
+\begin{enumerate}
+    \item \textbf{Resistência à Mudança}
+        - Mitigação: Formação contínua e champions internos
+    
+    \item \textbf{Incompatibilidades Técnicas}
+        - Mitigação: Testes extensivos em ambiente de homologação
+    
+    \item \textbf{Performance Degradada}
+        - Mitigação: Monitorização proativa e otimização contínua
+    
+    \item \textbf{Falhas de Integração}
+        - Mitigação: Fallbacks e modo offline
+\end{enumerate}
+
+\section{Recursos e Equipa}
+
+\subsection{Equipa Técnica}
+- 1 Arquiteto de Software (autor)
+- 2 Developers Full-Stack (colaboradores SCMVV)
+- 1 DBA Oracle (consultor)
+- 1 UX Designer (part-time)
+
+\subsection{Equipa Clínica}
+- 1 Médico (validação clínica)
+- 1 Farmacêutico (requisitos farmácia)
+- 1 Enfermeiro (workflow administração)
+
+\subsection{Infraestrutura}
+- 4 VMs para desenvolvimento/teste
+- 1 servidor Oracle dedicado
+- Licenças de software necessárias
+
+% [INSERIR: Figura 3.3 - Organigrama da equipa do projeto]
+
+\section{Monitorização e Controlo}
+
+\subsection{KPIs do Projeto}
+
+\begin{itemize}
+    \item \textbf{Técnicos}: Bugs/sprint, velocidade, debt técnico
+    \item \textbf{Negócio}: Redução de erros, tempo poupado, adoção
+    \item \textbf{Qualidade}: Cobertura de testes, code reviews, documentação
+\end{itemize}
+
+\subsection{Reuniões de Acompanhamento}
+
+- Daily standups (equipa técnica)
+- Sprint reviews quinzenais
+- Steering committee mensal
+- Demos com utilizadores mensais
+
+% [DESENVOLVER: Adicionar Gantt chart detalhado como anexo] 
