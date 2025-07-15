@@ -4,8 +4,6 @@
 Este projeto contém a estrutura LaTeX para a pré-tese do Mestrado em Engenharia Bioinformática da Universidade do Minho.
 
 **Autor:** Diogo André da Silva Esteves  
-**Orientador:** [Nome do Orientador]  
-**Coorientador:** [Nome do Coorientador]
 
 ## Estrutura do Projeto
 
