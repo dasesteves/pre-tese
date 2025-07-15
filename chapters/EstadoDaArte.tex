@@ -62,12 +62,25 @@ Standards are crucial for achieving interoperability. HL7 FHIR (Fast Healthcare 
 
 The literature review reveals several gaps in existing solutions. The most significant is deficient integration, as current systems often fail to provide seamless interoperability among stakeholders, leading to information silos. This is compounded by usability issues, where interfaces are not optimized for clinical workflows. This dissertation addresses these gaps by proposing a solution centered on a non-invasive integration architecture, user-centered design, and an incremental implementation model. The use of a centralized backend to orchestrate all processes, from prescription to administration, presents a key opportunity to create a single source of truth and bridge these gaps.
 
-\begin{figure}[htbp]
+\begin{table}[H]
     \centering
-    \includegraphics[width=0.95\textwidth]{images/generated/system_comparison_table.png}
     \caption{Comparative analysis of hospital medication management systems including legacy and modern solutions.}
     \label{tab:comparison}
-\end{figure}
+    \begin{tabularx}{\textwidth}{@{}l|X|X|X|X@{}}
+        \toprule
+        \textbf{Feature} & \textbf{AIDA-PCE (Legacy)} & \textbf{Epic} & \textbf{Cerner} & \textbf{Our System} \\
+        \midrule
+        Architecture & Monolithic & Integrated Suite & Modular & Microservices \\
+        User Interface & Desktop Only & Web/Mobile & Web/Mobile & Responsive Web \\
+        Real-time Validation & Limited & Yes & Yes & Advanced \\
+        Integration & Custom APIs & HL7/FHIR & HL7/FHIR & RESTful/HL7 \\
+        Cloud Support & No & Hybrid & Yes & Cloud-Ready \\
+        Cost Model & License & Subscription & Subscription & Open Source \\
+        Customization & Limited & Moderate & High & Very High \\
+        AI/ML Features & None & Basic & Advanced & Planned \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
 \section{Conclusion and Positioning}
 

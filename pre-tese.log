@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 14:34
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,6 +1208,26 @@ File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \gtt@left@slot=\count435
 \gtt@right@slot=\count436
 )
+(C:\Users\dases\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen338
+\lightrulewidth=\dimen339
+\cmidrulewidth=\dimen340
+\belowrulesep=\dimen341
+\belowbottomsep=\dimen342
+\aboverulesep=\dimen343
+\abovetopsep=\dimen344
+\cmidrulesep=\dimen345
+\cmidrulekern=\dimen346
+\defaultaddspace=\dimen347
+\@cmidla=\count437
+\@cmidlb=\count438
+\@aboverulesep=\dimen348
+\@belowrulesep=\dimen349
+\@thisruleclass=\count439
+\@lastruleclass=\count440
+\@thisrulewidth=\dimen350
+)
 
 Package fontspec Info: 
 (fontspec)             Font family 'NewsGotT.ttf(0)' created for font
@@ -1258,11 +1278,11 @@ Package chngcntr Info: \counterwithout already defined.
 (C:\Users\dases\AppData\Local\Programs\MiKTeX\tex/latex/pagecolor\pagecolor.sty
 Package: pagecolor 2025-01-28 v1.2d Provides thepagecolor (HMM)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 136.
+Package hyperref Info: Option `colorlinks' set `true' on input line 137.
  (C:\Users\dases\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
 Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
 \FN@temptoken=\toks57
-\footnotemargin=\dimen338
+\footnotemargin=\dimen351
 Package footmisc Info: Declaring symbol style bringhurst on input line 549.
 Package footmisc Info: Declaring symbol style chicago on input line 557.
 Package footmisc Info: Declaring symbol style wiley on input line 566.
@@ -1282,24 +1302,24 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (C:\Users\dases\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
-\c@tracingmulticols=\count437
+\c@tracingmulticols=\count441
 \mult@box=\box95
-\multicol@leftmargin=\dimen339
-\c@unbalance=\count438
-\c@collectmore=\count439
-\doublecol@number=\count440
-\multicoltolerance=\count441
-\multicolpretolerance=\count442
-\full@width=\dimen340
-\page@free=\dimen341
-\premulticols=\dimen342
-\postmulticols=\dimen343
+\multicol@leftmargin=\dimen352
+\c@unbalance=\count442
+\c@collectmore=\count443
+\doublecol@number=\count444
+\multicoltolerance=\count445
+\multicolpretolerance=\count446
+\full@width=\dimen353
+\page@free=\dimen354
+\premulticols=\dimen355
+\postmulticols=\dimen356
 \multicolsep=\skip77
 \multicolbaselineskip=\skip78
 \partial@page=\box96
 \last@line=\box97
 \mc@boxedresult=\box98
-\maxbalancingoverflow=\dimen344
+\maxbalancingoverflow=\dimen357
 \mult@rightbox=\box99
 \mult@grightbox=\box100
 \mult@firstbox=\box101
@@ -1340,16 +1360,16 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \@tempa=\box136
 \@tempa=\box137
 \@tempa=\box138
-\c@minrows=\count443
-\c@columnbadness=\count444
-\c@finalcolumnbadness=\count445
-\last@try=\dimen345
-\multicolovershoot=\dimen346
-\multicolundershoot=\dimen347
+\c@minrows=\count447
+\c@columnbadness=\count448
+\c@finalcolumnbadness=\count449
+\last@try=\dimen358
+\multicolovershoot=\dimen359
+\multicolundershoot=\dimen360
 \mult@nat@firstbox=\box139
 \colbreak@box=\box140
-\mc@col@check@num=\count446
-\g__mc_curr_col_int=\count447
+\mc@col@check@num=\count450
+\g__mc_curr_col_int=\count451
 )))
 \pre-tese@idxfile=\write4
 \openout4 = `pre-tese.idx'.
@@ -1493,7 +1513,7 @@ Package hyperref Info: Link coloring ON on input line 22.
 \@outlinefile=\write5
 \openout5 = `pre-tese.out'.
 
-\c@lstlisting=\count448
+\c@lstlisting=\count452
  (covers/Covers.tex
 File: images/logos/UM.jpg Graphic file (type bmp)
 <images/logos/UM.jpg>
@@ -1556,25 +1576,25 @@ File: images/logos/EE.jpg Graphic file (type bmp)
 [4
 
 
-] (pre-tese.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+]
 
+[5] (pre-tese.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
 
 (C:\Users\dases\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
 
 (C:\Users\dases\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
-0.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 9
+.
 
 (C:\Users\dases\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd)
 
-[5
+[6
 
 
 ])
@@ -1583,18 +1603,9 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
 
 
 
-[6] (pre-tese.lof)
+[7] (pre-tese.lof)
 \tf@lof=\write7
 \openout7 = `pre-tese.lof'.
-
-
-
-[7
-
-
-] (pre-tese.lot)
-\tf@lot=\write8
-\openout8 = `pre-tese.lot'.
 
 
 
@@ -1632,94 +1643,94 @@ File: images/generated/swiss_cheese_model.png Graphic file (type bmp)
 [6]
 
 [7]
-File: images/generated/system_comparison_table.png Graphic file (type bmp)
-<images/generated/system_comparison_table.png>
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|\TU/NewsGotT.ttf(1)/b/n/12 AIDA-PCE
+ []
+
 ) (chapters/PlanoDeTrabalho.tex
 
 [8]
-
-[9]
 Chapter 3.
 File: images/generated/gantt_chart_detailed.png Graphic file (type bmp)
 <images/generated/gantt_chart_detailed.png>
 
 
-[10
+[9
 
 ]) (chapters/Metodologia.tex
 
-[11]
+[10]
 Chapter 4.
 
 
-[12
+[11
 
 ]
 
-[13]
+[12]
 
-[14]) (chapters/Resultados.tex
+[13]) (chapters/Resultados.tex
 
-[15]
+[14]
 Chapter 5.
 File: images/generated/system_architecture.png Graphic file (type bmp)
 <images/generated/system_architecture.png>
 
 
-[16
+[15
 
 ]
 File: images/generated/error_reduction_dashboard.png Graphic file (type bmp)
 <images/generated/error_reduction_dashboard.png>
 
 
-[17]
+[16]
 File: images/generated/user_satisfaction.png Graphic file (type bmp)
 <images/generated/user_satisfaction.png>
 
 
-[18]
+[17]
 
-[19]
+[18]
 File: images/generated/roi_analysis.png Graphic file (type bmp)
 <images/generated/roi_analysis.png>
 File: images/generated/future_roadmap.png Graphic file (type bmp)
 <images/generated/future_roadmap.png>
 ) (chapters/Discussao.tex
 
-[20]
+[19]
 
-[21]
+[20]
 Chapter 6.
 
 
-[22
+[21
 
 ]) (chapters/Conclusao.tex
 
-[23]
+[22]
 Chapter 7.
 
 
-[24
+[23
 
 ]) (pre-tese.bbl
 
-[25]
+[24]
 
-[26
+[25
 
 ]
+
+[26]
 
 [27]
 
 [28]
 
-[29]
+[29]) (covers/BackCover.tex
 
-[30]) (covers/BackCover.tex
-
-[31]
+[30]
 
 [1]) (pre-tese.aux)
  ***********
@@ -1727,15 +1738,15 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
 Package rerunfilecheck Info: File `pre-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 8E47ECDAB9A95A59AAF39DAD7385F5CA;9952.
+(rerunfilecheck)             Checksum: D0C6010CEEAFC517A82F8A57C7100785;9831.
  ) 
 Here is how much of TeX's memory you used:
- 39636 strings out of 403337
- 824004 string characters out of 5463040
- 1345908 words of memory out of 5000000
- 67342 multiletter control sequences out of 15000+600000
+ 39697 strings out of 403337
+ 824709 string characters out of 5463040
+ 1342115 words of memory out of 5000000
+ 67404 multiletter control sequences out of 15000+600000
  632650 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 113i,6n,119p,1304b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,10n,119p,1304b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on pre-tese.pdf (42 pages).
+Output written on pre-tese.pdf (41 pages).
