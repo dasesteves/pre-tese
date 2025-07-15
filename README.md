@@ -1,7 +1,10 @@
 # Pré-Tese - Optimization and Standardization of Medication Management Processes in Hospital Environments
 
 ## Descrição
-Este projeto contém a estrutura LaTeX para a pré-tese do Mestrado em Engenharia Bioinformática da Universidade do Minho.
+Este projeto contém a estrutura LaTeX para a pré-tese do Mestrado em Engenharia Bioinformática da Universidade do Minho. Para abrir:
+```
+start pre-tese.pdf
+```
 
 **Autor:** Diogo André da Silva Esteves  
 
