@@ -1,14 +1,14 @@
 \babel@toc {portuguese}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Hospital medication management process showing the five main stages and potential error points. Adapted from the medication use process framework \citep {austin2018,zheng2021}.}}{2}{figure.caption.11}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Conceptual diagram of the problem space, illustrating the fragmented communication flow and resulting information silos that contribute to medication errors and operational inefficiencies.}}{2}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2}{\ignorespaces Evolution of healthcare information systems from mainframe to integrated platforms \citep {shermock2023,vaghasiya2023}.}}{4}{figure.caption.12}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Swiss Cheese Model applied to medication errors showing how system failures align to cause accidents. Based on Reason's model \citep {ciapponi2021,mulac2020}.}}{6}{figure.caption.13}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Comparative analysis of hospital medication management systems including legacy and modern solutions.}}{8}{figure.caption.14}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Evolution of healthcare information systems from mainframe to integrated platforms \citep {shermock2023, vaghasiya2023}.}}{6}{figure.caption.12}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Swiss Cheese Model applied to medication errors, showing how system failures align to cause accidents. Based on Reason's model \citep {ciapponi2021, mulac2020}.}}{7}{figure.caption.13}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Comparative analysis of hospital medication management systems including legacy and modern solutions.}}{9}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5}{\ignorespaces Fases da investigação e metodologia de desenvolvimento do sistema de gestão medicamentosa.}}{16}{figure.caption.15}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Cronograma de execução do projeto de investigação, mostrando as principais fases e marcos.}}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Phases of the research and development methodology for the medication management system.}}{16}{figure.caption.15}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Gantt chart illustrating the project's execution timeline, including key phases and milestones.}}{19}{figure.caption.16}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7}{\ignorespaces Arquitetura em camadas do sistema de gestão medicamentosa mostrando componentes internos e integrações com sistemas externos.}}{20}{figure.caption.17}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Métricas abrangentes de desenvolvimento incluindo estatísticas de código, performance, utilização e qualidade do sistema.}}{23}{figure.caption.18}%

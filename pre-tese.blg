@@ -5,44 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 Database file #1: pre-tese.bib
-You've used 49 entries,
+You've used 59 entries,
             2773 wiz_defined-function locations,
-            908 strings with 15084 characters,
-and the built_in function-call counts, 25054 in all, are:
-= -- 2155
-> -- 1743
-< -- 18
-+ -- 589
-- -- 540
-* -- 2218
-:= -- 4011
-add.period$ -- 185
-call.type$ -- 49
-change.case$ -- 324
-chr.to.int$ -- 49
-cite$ -- 98
-duplicate$ -- 991
-empty$ -- 1855
-format.name$ -- 601
-if$ -- 5164
-int.to.chr$ -- 1
+            963 strings with 17580 characters,
+and the built_in function-call counts, 31277 in all, are:
+= -- 2682
+> -- 2261
+< -- 20
++ -- 764
+- -- 702
+* -- 2799
+:= -- 4989
+add.period$ -- 220
+call.type$ -- 59
+change.case$ -- 408
+chr.to.int$ -- 56
+cite$ -- 118
+duplicate$ -- 1243
+empty$ -- 2243
+format.name$ -- 773
+if$ -- 6439
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 51
-newline$ -- 291
-num.names$ -- 196
-pop$ -- 575
+missing$ -- 63
+newline$ -- 344
+num.names$ -- 236
+pop$ -- 734
 preamble$ -- 1
-purify$ -- 278
+purify$ -- 352
 quote$ -- 0
-skip$ -- 775
+skip$ -- 976
 stack$ -- 0
-substring$ -- 836
-swap$ -- 49
-text.length$ -- 0
+substring$ -- 996
+swap$ -- 94
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 509
+type$ -- 619
 warning$ -- 0
-while$ -- 186
+while$ -- 229
 width$ -- 0
-write$ -- 715
+write$ -- 849

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 10:41
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1550,7 +1550,6 @@ File: images/logos/EE.jpg Graphic file (type bmp)
 
 [2
 
-
 ]
 
 [3
@@ -1585,21 +1584,19 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
 
 [6]
 
-[7]
-
-[8])
+[7])
 \tf@toc=\write6
 \openout6 = `pre-tese.toc'.
 
 
 
-[9] (pre-tese.lof)
+[8] (pre-tese.lof)
 \tf@lof=\write7
 \openout7 = `pre-tese.lof'.
 
 
 
-[10
+[9
 
 
 ] (pre-tese.lot)
@@ -1608,13 +1605,13 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
 
 
 
-[11
+[10
 
 
 ] (chapters/Introducao.tex
 Cap\'{\i }tulo 1.
-File: images/generated/medication_flow_process.png Graphic file (type bmp)
-<images/generated/medication_flow_process.png>
+File: images/generated/problem_space_diagram.png Graphic file (type bmp)
+<images/generated/problem_space_diagram.png>
 
 
 [1
@@ -1622,31 +1619,31 @@ File: images/generated/medication_flow_process.png Graphic file (type bmp)
 
 ]
 
-[2]) (chapters/EstadoDaArte.tex
+[2]
 
-[3]
+[3]) (chapters/EstadoDaArte.tex
+
+[4]
 Cap\'{\i }tulo 2.
 File: images/generated/healthcare_it_timeline.png Graphic file (type bmp)
 <images/generated/healthcare_it_timeline.png>
 
 
-[4
+[5
 
 ]
-
-[5]
 File: images/generated/swiss_cheese_model.png Graphic file (type bmp)
 <images/generated/swiss_cheese_model.png>
 
 
 [6]
-File: images/generated/system_comparison_table.png Graphic file (type bmp)
-<images/generated/system_comparison_table.png>
-
 
 [7]
 
-[8]) (chapters/PlanoDeTrabalho.tex
+[8]
+File: images/generated/system_comparison_table.png Graphic file (type bmp)
+<images/generated/system_comparison_table.png>
+) (chapters/PlanoDeTrabalho.tex
 
 [9]
 Cap\'{\i }tulo 3.
@@ -1678,9 +1675,9 @@ File: images/generated/methodology_phases.png Graphic file (type bmp)
 [17]
 File: images/generated/project_timeline.png Graphic file (type bmp)
 <images/generated/project_timeline.png>
-) (chapters/Resultados.tex
 
-[18]
+
+[18]) (chapters/Resultados.tex
 
 [19]
 Cap\'{\i }tulo 5.
@@ -1752,9 +1749,11 @@ Cap\'{\i }tulo 7.
 
 [38]
 
-[39]) (covers/BackCover.tex
+[39]
 
-[40]
+[40]) (covers/BackCover.tex
+
+[41]
 
 [1]) (pre-tese.aux)
  ***********
@@ -1762,15 +1761,15 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
 Package rerunfilecheck Info: File `pre-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 367E4726D95E42A840A74BAB78C44FFE;25187.
+(rerunfilecheck)             Checksum: 3C45466B25A805A1AEAC6DBF0A2715E9;23067.
  ) 
 Here is how much of TeX's memory you used:
- 39666 strings out of 403337
- 824689 string characters out of 5463040
- 1350232 words of memory out of 5000000
- 67369 multiletter control sequences out of 15000+600000
+ 39693 strings out of 403337
+ 825434 string characters out of 5463040
+ 1347927 words of memory out of 5000000
+ 67396 multiletter control sequences out of 15000+600000
  632658 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 113i,6n,119p,1024b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,6n,119p,1236b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on pre-tese.pdf (54 pages).

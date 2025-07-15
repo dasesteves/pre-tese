@@ -1,43 +1,31 @@
 \babel@toc {portuguese}{}\relax 
 \contentsline {chapter}{Resumo}{i}{chapter*.1}%
 \contentsline {chapter}{Abstract}{ii}{chapter*.2}%
-\contentsline {chapter}{Agradecimentos}{iii}{chapter*.3}%
+\contentsline {chapter}{Acknowledgements}{iii}{chapter*.3}%
 \contentsline {chapter}{Lista de Abreviaturas e Símbolos}{iv}{chapter*.4}%
 \contentsline {chapter}{Índice}{v}{section*.5}%
-\contentsline {chapter}{Lista de Figuras}{x}{section*.7}%
-\contentsline {chapter}{Lista de Tabelas}{xi}{section*.9}%
-\contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Contexto e Enquadramento}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Motivação e Relevância}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos}{2}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{2}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Objetivos Específicos}{2}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Contribuições do Trabalho}{3}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Estrutura da Dissertação}{3}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Estado da Arte}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Sistemas de Gestão Medicamentosa Hospitalar}{4}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Evolução Histórica}{4}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Sistemas Comerciais Atuais}{4}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Desafios dos Sistemas Atuais}{5}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Segurança na Medicação}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Tipos de Erros Mais Frequentes}{5}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Tecnologias Emergentes}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Clinical Decision Support Systems (CDSS)}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Inteligência Artificial em Saúde}{6}{subsection.2.3.2}%
-\contentsline {subsubsection}{Natural Language Processing}{6}{subsection.2.3.2}%
-\contentsline {subsubsection}{Machine Learning}{7}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Blockchain em Saúde}{7}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Arquiteturas e Tecnologias de Implementação}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Arquiteturas de Microserviços}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Padrões de Integração}{7}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Contexto Nacional}{7}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Standards e Interoperabilidade}{8}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}HL7 FHIR}{8}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Standards Nacionais}{8}{subsection.2.6.2}%
-\contentsline {section}{\numberline {2.7}Lacunas e Oportunidades}{8}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Lacunas Identificadas}{8}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Oportunidades de Investigação}{9}{subsection.2.7.2}%
-\contentsline {section}{\numberline {2.8}Síntese e Posicionamento do Trabalho}{9}{section.2.8}%
+\contentsline {chapter}{Lista de Figuras}{ix}{section*.7}%
+\contentsline {chapter}{Lista de Tabelas}{x}{section*.9}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Context and Problem Definition}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objectives}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Scientific Objectives}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Technological Objectives}{3}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Dissertation Structure}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}State of the Art}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hospital Medication Management Systems}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Historical Evolution}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Current Commercial Systems}{5}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Challenges of Current Systems}{6}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Medication Safety and Emerging Technologies}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Clinical Decision Support Systems (CDSS)}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Artificial Intelligence in Healthcare}{7}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Other Emerging Technologies}{8}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Implementation Architectures and Technologies}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Architectural Patterns}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Standards and Interoperability}{8}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Gaps and Opportunities}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Conclusion and Positioning}{9}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Plano de Trabalho}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Metodologia de Desenvolvimento}{10}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Princípios Metodológicos}{10}{subsection.3.1.1}%
@@ -58,32 +46,32 @@
 \contentsline {section}{\numberline {3.5}Monitorização e Controlo}{13}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}KPIs do Projeto}{13}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Reuniões de Acompanhamento}{13}{subsection.3.5.2}%
-\contentsline {chapter}{\numberline {4}Metodologia}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Abordagem Metodológica}{14}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Paradigma de Investigação}{14}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Estratégia de Investigação}{14}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Desenho da Investigação}{14}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Questões de Investigação}{14}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Objetivos da Investigação}{15}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Metodologia de Desenvolvimento}{15}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Modelo de Desenvolvimento}{15}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Fases da Investigação}{15}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Métodos de Recolha de Dados}{16}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Dados Quantitativos}{16}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Dados Qualitativos}{16}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Critérios de Avaliação}{17}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Critérios de Eficácia}{17}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Critérios de Aceitação}{17}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Validação e Verificação}{17}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Validação Funcional}{17}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Validação Clínica}{17}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}Considerações Éticas}{17}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Proteção de Dados}{17}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Aprovação Ética}{18}{subsection.4.7.2}%
-\contentsline {section}{\numberline {4.8}Limitações do Estudo}{18}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Limitações Metodológicas}{18}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Limitações Técnicas}{18}{subsection.4.8.2}%
-\contentsline {section}{\numberline {4.9}Cronograma de Execução}{18}{section.4.9}%
+\contentsline {chapter}{\numberline {4}Methodology}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Methodological Approach}{14}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Research Paradigm}{14}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Research Strategy}{14}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Research Design}{14}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Research Questions}{14}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Research Objectives}{15}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Development Methodology}{15}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Development Model}{15}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Investigation Phases}{15}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Data Collection Methods}{16}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Quantitative Data}{16}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Qualitative Data}{17}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Evaluation Criteria}{17}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Effectiveness Criteria}{17}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Acceptance Criteria}{17}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Validation and Verification}{17}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Functional Validation}{17}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Clinical Validation}{17}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Ethical Considerations}{18}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Data Protection}{18}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Ethical Approval}{18}{subsection.4.7.2}%
+\contentsline {section}{\numberline {4.8}Study Limitations}{18}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Methodological Limitations}{18}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Technical Limitations}{18}{subsection.4.8.2}%
+\contentsline {section}{\numberline {4.9}Execution Timeline}{19}{section.4.9}%
 \contentsline {chapter}{\numberline {5}Resultados}{20}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Arquitetura do Sistema Desenvolvido}{20}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Visão Geral da Arquitetura}{20}{subsection.5.1.1}%

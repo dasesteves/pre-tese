@@ -1,61 +1,56 @@
-\chapter{Introdução}
+\chapter{Introduction}
 
-% [NOTA: Remover parágrafo redundante - esta informação já aparece nos objetivos]
-A gestão medicamentosa em ambiente hospitalar constitui um dos processos mais críticos e complexos das instituições de saúde modernas. O Hospital da Misericórdia de Vila Verde (SCMVV), à semelhança de outras unidades hospitalares nacionais, enfrenta desafios significativos na coordenação entre prescrição médica, validação farmacêutica e administração por enfermagem. Este trabalho apresenta o desenvolvimento e implementação de um sistema integrado de gestão medicamentosa que visa resolver estas lacunas através de tecnologias modernas.
+\section{Context and Problem Definition}
 
-\section{Contexto e Enquadramento}
+Medication management is a high-stakes, complex process central to modern healthcare delivery. Its successful execution is critical for patient safety, yet it remains a major source of preventable adverse events. The landmark report "To Err is Human" by the Institute of Medicine brought global attention to the prevalence of medical errors, identifying them as a leading cause of morbidity and mortality \cite{kohn2000}. Subsequent research and initiatives by the World Health Organization have reinforced this reality, indicating that medication-related harm affects one in ten patients globally and that the associated costs are substantial \cite{who2017, who2022}.
 
-A gestão medicamentosa em ambiente hospitalar constitui um dos processos mais críticos e complexos do sistema de saúde \cite{kohn2000,berwick2008}. No Hospital da Santa Casa da Misericórdia de Vila Verde (SCMVV), a necessidade de modernização dos sistemas informáticos tornou-se evidente face aos desafios crescentes de segurança, eficiência e rastreabilidade.
+A primary contributing factor to this problem is the fragmented nature of Health Information Technology (HIT) ecosystems within hospitals \cite{berwick2008}. Many healthcare institutions operate on a patchwork of legacy systems, often developed decades apart using disparate technologies \cite{kazemi2016}. This technological heterogeneity creates significant barriers to interoperability, resulting in information silos where critical patient data is not shared effectively between departments or professionals \cite{keasberry2017}. The workflow, which should be a seamless continuum from a physician's prescription to pharmaceutical validation and finally to nursing administration, is often interrupted by manual processes, verbal communications, and data re-entry, each step introducing a new opportunity for error.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{images/generated/medication_flow_process.png}
-    \caption{Hospital medication management process showing the five main stages and potential error points. Adapted from the medication use process framework \citep{austin2018,zheng2021}.}
-    \label{fig:medication_flow}
+    \includegraphics[width=0.9\textwidth]{images/generated/problem_space_diagram.png}
+    \caption{Conceptual diagram of the problem space, illustrating the fragmented communication flow and resulting information silos that contribute to medication errors and operational inefficiencies.}
+    \label{fig:problem_space}
 \end{figure}
 
-Os sistemas hospitalares portugueses operam frequentemente com soluções fragmentadas, desenvolvidas em diferentes épocas \cite{kazemi2016} e com tecnologias díspares. Na SCMVV, o sistema legado AIDA-PCE, implementado antes de 2010, continua operacional mas apresenta limitações significativas:
+The Santa Casa da Misericórdia de Vila Verde (SCMVV) serves as a representative case study for these systemic challenges. Its core operations rely on the AIDA-PCE, a legacy system with significant limitations, including a non-intuitive interface, a lack of real-time clinical decision support (e.g., for drug interactions), and poor integration capabilities \cite{moss2015, bowles2020}. This environment compromises patient safety and hampers operational efficiency. This dissertation addresses these issues by detailing the design, development, and implementation of a modern, integrated medication management system aimed at creating a cohesive, safe, and efficient clinical workflow.
 
-O sistema apresenta uma interface desatualizada que dificulta a navegação e aumenta significativamente o tempo necessário para prescrição médica. A ausência de validações automáticas em tempo real \cite{moss2015} compromete a segurança do paciente, enquanto a falta de integração com sistemas modernos de gestão hospitalar resulta em silos de informação e processos fragmentados. 
+\section{Objectives}
 
-Adicionalmente, as dificuldades na geração de relatórios e análise de dados \cite{bowles2020} limitam a capacidade de monitorização e melhoria contínua. Os problemas de escalabilidade com o aumento do volume de pacientes evidenciam a necessidade urgente de modernização tecnológica.
+The primary goal of this research is to develop and evaluate an integrated medication management system that optimizes the prescription, validation, dispensing, and administration processes at the SCMVV, thereby enhancing patient safety and operational efficiency.
 
-% [INSERIR: Tabela 1.1 - Estatísticas de erros de medicação em hospitais portugueses (fonte: DGS)]
+To achieve this overarching goal, the following specific scientific and technological objectives were defined:
 
-\section{Motivação e Relevância}
+\subsection{Scientific Objectives}
+\begin{enumerate}
+    \item To analyze the impact of the integrated system on the rate of medication errors, quantifying the reduction in prescribing and administration faults.
+    \item To evaluate the system's effect on clinical workflow efficiency by measuring key performance indicators, such as the time required for prescription and dispensing.
+    \item To assess the usability and acceptance of the new system among clinical staff (physicians, pharmacists, and nurses) using established frameworks.
+\end{enumerate}
 
-Segundo dados da Organização Mundial de Saúde \cite{who2017,who2022}, os erros de medicação afetam 1 em cada 10 pacientes \cite{who2017} hospitalizados globalmente. Em Portugal, embora não existam estatísticas oficiais consolidadas, estima-se que o impacto seja similar \cite{dgs2020}. A implementação de sistemas integrados de gestão medicamentosa \cite{shermock2023,vaghasiya2023} pode reduzir estes erros em até 85\% \cite{mahoney2007}.
+\subsection{Technological Objectives}
+\begin{enumerate}
+    \item To design and implement a scalable and resilient backend based on a microservices architecture using Node.js and Java.
+    \item To develop a robust, real-time clinical decision support engine for validating prescriptions against potential drug-drug interactions, allergies, and dosage errors \cite{belle2013}.
+    \item To create a responsive and intuitive user interface using modern web technologies, such as React and Next.js, to streamline clinical tasks \cite{misra2023}.
+    \item To ensure seamless, bidirectional integration with existing legacy systems, including the hospital's primary information system and pharmacy software, through a secure RESTful API layer \cite{mandl2020}.
+    \item To establish a comprehensive audit trail for all medication-related activities, ensuring full traceability from prescription to administration \cite{european2016}.
+\end{enumerate}
 
-% [DESENVOLVER: Adicionar dados específicos da SCMVV - número de camas, prescrições/dia, etc.]
+\section{Dissertation Structure}
 
-\section{Objetivos}
+This dissertation is organized into seven chapters, each addressing a specific aspect of the research.
 
-\subsection{Objetivo Geral}
-Desenvolver um sistema integrado de gestão medicamentosa que otimize os processos de prescrição, validação, dispensa e administração de medicamentos na SCMVV, garantindo maior segurança do paciente \cite{ciapponi2021} e eficiência operacional.
+\textbf{Chapter 1, Introduction,} provides the context for the research, defines the problem of medication management in fragmented hospital environments, and presents the scientific and technological objectives of the work. It concludes by outlining the structure of the document.
 
-\subsection{Objetivos Específicos}
+\textbf{Chapter 2, State of the Art,} offers a comprehensive review of the literature on hospital medication management systems, medication safety, emerging technologies such as Artificial Intelligence, and interoperability standards like HL7 FHIR. This review identifies the existing gaps that this research aims to address.
 
-Para alcançar o objetivo geral, foram definidos cinco objetivos específicos fundamentais. Primeiro, modernizar a interface do sistema através do desenvolvimento de uma interface intuitiva e responsiva utilizando React \cite{misra2023} e Material-UI, com o objetivo de reduzir o tempo médio de prescrição. Segundo, implementar um sistema robusto de validação em tempo real para interações medicamentosas \cite{moss2015,belle2013} e dosagens, aumentando a segurança do paciente.
+\textbf{Chapter 3, Work Plan,} details the project's methodology, including the phases of development, key tasks, timeline, and deliverables. It provides the strategic roadmap followed for the research and implementation process.
 
-Terceiro, garantir rastreabilidade completa através do estabelecimento de auditoria abrangente de todas as operações \cite{european2016}, permitindo monitorização e análise retrospetiva. Quarto, integrar o sistema com SONHO, farmácia e outros sistemas hospitalares através de APIs RESTful \cite{mandl2020}, eliminando silos de informação. Finalmente, otimizar a performance do sistema através de técnicas avançadas de caching e otimização de queries Oracle \cite{jiang2014}.
+\textbf{Chapter 4, Methodology,} describes the architectural and technological choices made for the system's development. It elaborates on the microservices architecture, the specific technologies employed (React, Node.js, Oracle), the agile development approach, and the methods used for system evaluation.
 
-\section{Contribuições do Trabalho}
+\textbf{Chapter 5, Results,} presents the outcomes of the project. This includes a description of the final implemented system and a presentation of the quantitative and qualitative data gathered during its evaluation, such as error reduction rates, performance metrics, and user satisfaction scores.
 
-Este trabalho apresenta contribuições significativas para o campo da gestão medicamentosa hospitalar. A principal contribuição técnica consiste numa arquitetura modular baseada em microserviços \cite{newman2021} que permite evolução independente de componentes, facilitando manutenção e extensibilidade futura. 
+\textbf{Chapter 6, Discussion,} interprets the results presented in the previous chapter, analyzing their implications in the context of the state of the art. This chapter also addresses the limitations of the study and reflects on the challenges encountered during the project.
 
-O desenvolvimento de um sistema de validação inteligente representa uma contribuição importante, implementando um motor de regras extensível para validação de prescrições \cite{amland2019} que pode ser adaptado a diferentes contextos hospitalares. A consolidação de múltiplos sistemas numa interface unificada \cite{bowles2020} constitui uma contribuição prática que melhora significativamente a experiência do utilizador.
-
-Do ponto de vista técnico, o modelo de dados otimizado proporciona uma estrutura eficiente para consultas complexas em Oracle \cite{lin2018}, enquanto o framework de testes desenvolvido garante qualidade e confiabilidade através de uma suite completa de validações \cite{martin2017}.
-
-% [INSERIR: Figura 1.2 - Arquitetura geral da solução proposta]
-
-\section{Estrutura da Dissertação}
-
-% [NOTA: Simplificar - remover descrições óbvias]
-Os capítulos seguintes desenvolvem o trabalho realizado:
-\textbf{Capítulo 2} apresenta o estado da arte;
-\textbf{Capítulo 3} detalha o plano de trabalho;
-\textbf{Capítulo 4} descreve a metodologia;
-\textbf{Capítulo 5} apresenta os resultados;
-\textbf{Capítulo 6} discute as implicações;
-\textbf{Capítulo 7} conclui com trabalho futuro. 
+\textbf{Chapter 7, Conclusion,} summarizes the key findings and contributions of the dissertation. It reiterates how the project met its objectives and concludes by proposing potential directions for future research and development in this domain. 

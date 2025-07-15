@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,22 +15,6 @@ J.~Adler-Milstein, A.~J. Holmgren, P.~Kralovec, C.~Worzala, T.~Searcy, and
   28:\penalty0 1120--1124, 2021.
 \newblock \doi{10.1093/jamia/ocab035}.
 
-\bibitem[Amland and Hahn-Cover(2019)]{amland2019}
-R.~C. Amland and K.~E. Hahn-Cover.
-\newblock Clinical decision support for early recognition of sepsis.
-\newblock \emph{American Journal of Medical Quality}, 34:\penalty0 494--501,
-  2019.
-\newblock \doi{10.1177/1062860619873225}.
-
-\bibitem[Austin et~al.(2018)Austin, Smith, and Tariq]{austin2018}
-J.~A. Austin, I.~R. Smith, and A.~Tariq.
-\newblock The impact of closed-loop electronic medication management on time to
-  first dose: A comparative study between paper and digital hospital
-  environments.
-\newblock \emph{International Journal of Pharmacy Practice}, 26:\penalty0
-  526--533, 2018.
-\newblock \doi{10.1111/ijpp.12432}.
-
 \bibitem[Bates et~al.(2021)Bates, Levine, Syrowatka, Kuznetsova, Craig, Rui,
   Jackson, and Rhee]{bates2021}
 D.~W. Bates, D.~Levine, A.~Syrowatka, M.~Kuznetsova, K.~J.~T. Craig, A.~Rui,
@@ -40,12 +24,20 @@ D.~W. Bates, D.~Levine, A.~Syrowatka, M.~Kuznetsova, K.~J.~T. Craig, A.~Rui,
 \newblock \emph{NPJ Digital Medicine}, 4:\penalty0 54, 2021.
 \newblock \doi{10.1038/s41746-021-00423-6}.
 
-\bibitem[Belle et~al.(2013)Belle, Kon, and Najarian]{belle2013}
+\bibitem[Belle et~al.(2013{\natexlab{a}})Belle, Kon, and Najarian]{belle2013}
 A.~Belle, M.~A. Kon, and K.~Najarian.
 \newblock Biomedical informatics for computer‐aided decision support systems:
   A survey.
 \newblock \emph{The Scientific World Journal}, 2013\penalty0 (1):\penalty0
-  769639, 2013.
+  769639, 2013{\natexlab{a}}.
+
+\bibitem[Belle et~al.(2013{\natexlab{b}})Belle, Kon, and
+  Najarian]{belle2013biomedical}
+Ashwin Belle, Mark~A Kon, and Kayvan Najarian.
+\newblock Biomedical informatics for computer-aided decision support systems: A
+  survey.
+\newblock \emph{The Scientific World Journal}, 2013\penalty0 (1):\penalty0
+  769639, 2013{\natexlab{b}}.
 
 \bibitem[Berwick et~al.(2008)Berwick, Nolan, and Whittington]{berwick2008}
 D.~M. Berwick, T.~W. Nolan, and J.~Whittington.
@@ -53,13 +45,22 @@ D.~M. Berwick, T.~W. Nolan, and J.~Whittington.
 \newblock \emph{Health Affairs}, 27:\penalty0 759--769, 2008.
 \newblock \doi{10.1377/hlthaff.27.3.759}.
 
-\bibitem[Bowles et~al.(2020)Bowles, Mendoza-Santana, Vermeulen, Webber, and
-  Blackledge]{bowles2020}
+\bibitem[Bowles et~al.(2020{\natexlab{a}})Bowles, Mendoza-Santana, Vermeulen,
+  Webber, and Blackledge]{bowles2020}
 J.~K. Bowles, J.~Mendoza-Santana, A.~F. Vermeulen, T.~Webber, and
   E.~Blackledge.
 \newblock \emph{Integrating healthcare data for enhanced citizen-centred care
   and analytics}.
-\newblock IOS Press, 2020.
+\newblock IOS Press, 2020{\natexlab{a}}.
+
+\bibitem[Bowles et~al.(2020{\natexlab{b}})Bowles, Mendoza-Santana, Vermeulen,
+  Webber, and Blackledge]{bowles2020integrating}
+Juliana~KF Bowles, Juan Mendoza-Santana, Andreas~F Vermeulen, Thais Webber, and
+  Euan Blackledge.
+\newblock Integrating healthcare data for enhanced citizen-centred care and
+  analytics.
+\newblock In \emph{Integrated Citizen Centered Digital Health and Social Care},
+  pages 17--21. IOS Press, 2020{\natexlab{b}}.
 
 \bibitem[Boytim and Ulrich(2018)]{boytim2018}
 J.~Boytim and B.~Ulrich.
@@ -67,6 +68,15 @@ J.~Boytim and B.~Ulrich.
   literature review.
 \newblock \emph{AORN Journal}, 107:\penalty0 91--107, 2018.
 \newblock \doi{10.1002/aorn.12005}.
+
+\bibitem[Chaya et~al.(2023)Chaya, Colon, Boczar, Daar, Brydges, Thys, Kantar,
+  and Saadeh]{Chaya2023}
+Bachar~F. Chaya, Ricardo~Rodriguez Colon, Daniel Boczar, David~A. Daar,
+  Hilliard~T. Brydges, Erika Thys, Rami~S. Kantar, and Pierre~B. Saadeh.
+\newblock Perioperative medication management in elective plastic surgery
+  procedures.
+\newblock \emph{Journal of Craniofacial Surgery}, 2023.
+\newblock \doi{10.1097/scs.0000000000009183}.
 
 \bibitem[Ciapponi et~al.(2021)Ciapponi, Fernandez~Nievas, Seijo, Rodríguez,
   Vietto, García-Perdomo, Virgilio, Fajreldines, Tost, and Rose]{ciapponi2021}
@@ -77,11 +87,6 @@ A.~Ciapponi, S.~E. Fernandez~Nievas, M.~Seijo, M.~B. Rodríguez, V.~Vietto,
 \newblock \emph{Cochrane Database of Systematic Reviews}, 25:\penalty0
   CD009985, 2021.
 \newblock \doi{10.1002/14651858.CD009985.pub2}.
-
-\bibitem[{Direção-Geral da Saúde}(2020)]{dgs2020}
-{Direção-Geral da Saúde}.
-\newblock Estratégia nacional para a qualidade em saúde 2020-2025.
-\newblock DGS, Lisboa, Portugal, 2020.
 
 \bibitem[Dolin et~al.(2006)Dolin, Alschuler, Boyer, Beebe, Behlen, Biron, and
   Shabo]{dolin2006}
@@ -105,6 +110,14 @@ A.~Donabedian.
 \newblock \emph{Official Journal of the European Union}, L 32:\penalty0 1--27,
   2016.
 
+\bibitem[Falconer et~al.(2021)Falconer, Monaghan, and
+  Snoswell]{falconer2021pharmacist}
+Nazanin Falconer, Corey Monaghan, and Centaine~L Snoswell.
+\newblock The pharmacist informatician: providing an innovative model of care
+  during the covid-19 crisis.
+\newblock \emph{International Journal of Pharmacy Practice}, 29\penalty0
+  (2):\penalty0 152--156, 2021.
+
 \bibitem[Fowler(2018)]{fowler2018}
 M.~Fowler.
 \newblock \emph{Refactoring: Improving the Design of Existing Code}.
@@ -118,6 +131,16 @@ Gianpaolo Franzoso.
   (2):\penalty0 e183, 2014.
 \newblock \doi{10.5210/ojphi.v6i2.5315}.
 
+\bibitem[Ghobadi et~al.(2022)Ghobadi, Gholami, Hasanvand, Toulabi, Moradifar,
+  and Birjandi]{Ghobadi2022}
+Parvin Ghobadi, Mohammad Gholami, Shirin Hasanvand, Tahereh Toulabi, Nasrolah
+  Moradifar, and Mehdi Birjandi.
+\newblock Effects of a multidisciplinary management program on symptom burden
+  and medication adherence in heart failure patients with comorbidities: A
+  randomized controlled trial.
+\newblock \emph{BMC Nursing}, 2022.
+\newblock \doi{10.1186/s12912-022-01130-7}.
+
 \bibitem[Greenhalgh et~al.(2017)Greenhalgh, Wherton, Papoutsi, Lynch, Hughes,
   A'Court, Hinder, Fahy, Procter, and Shaw]{greenhalgh2017}
 T.~Greenhalgh, J.~Wherton, C.~Papoutsi, J.~Lynch, G.~Hughes, C.~A'Court,
@@ -127,6 +150,13 @@ T.~Greenhalgh, J.~Wherton, C.~Papoutsi, J.~Lynch, G.~Hughes, C.~A'Court,
   sustainability of health and care technologies.
 \newblock \emph{Journal of Medical Internet Research}, 19:\penalty0 e367, 2017.
 \newblock \doi{10.2196/jmir.8775}.
+
+\bibitem[Hawley et~al.(2019)Hawley, Triantafylidis, Phillips, and
+  Schwartz]{hawley2019}
+C.~E. Hawley, L.~K. Triantafylidis, S.~C. Phillips, and A.~W. Schwartz.
+\newblock Brown bag simulation to improve medication management in older
+  adults.
+\newblock \emph{MedEdPORTAL}, 15:\penalty0 10857, 2019.
 
 \bibitem[Hertzum et~al.(2022)Hertzum, Ellingsen, and Cajander]{hertzum2022}
 M.~Hertzum, G.~Ellingsen, and Å. Cajander.
@@ -152,6 +182,13 @@ A.~N. Isaacs, K.~Ch'ng, N.~Delhiwale, K.~Taylor, B.~Kent, and A.~Raymond.
   mzaa136, 2021.
 \newblock \doi{10.1093/intqhc/mzaa136}.
 
+\bibitem[Javaid et~al.(2022)Javaid, Zeadally, Fahim, and He]{javaid2022medical}
+Shumaila Javaid, Sherali Zeadally, Hamza Fahim, and Bin He.
+\newblock Medical sensors and their integration in wireless body area networks
+  for pervasive healthcare delivery: A review.
+\newblock \emph{IEEE Sensors Journal}, 22\penalty0 (5):\penalty0 3860--3877,
+  2022.
+
 \bibitem[Jiang(2014)]{jiang2014}
 Xiao~Ming Jiang.
 \newblock Design and implementation of computer equipment management system
@@ -169,6 +206,14 @@ S.~Kallio, T.~Eskola, M.~Pohjanoksa-Mäntylä, and M.~Airaksinen.
   Health}, 17\penalty0 (21):\penalty0 8186, 2020.
 \newblock \doi{10.3390/ijerph17218186}.
 
+\bibitem[Kallio et~al.(2021)Kallio, Eskola, Airaksinen, and
+  Pohjanoksa-Mäntylä]{Kallio2021}
+Sonja Kallio, Tiina Eskola, Marja Airaksinen, and Marika Pohjanoksa-Mäntylä.
+\newblock Identifying gaps in community pharmacists’ competence in medication
+  risk management in routine dispensing.
+\newblock \emph{Innovations in Pharmacy}, 2021.
+\newblock \doi{10.24926/iip.v12i1.3510}.
+
 \bibitem[Kazemi et~al.(2016)Kazemi, Rabiei, Moghaddasi, and
   Deimazar]{kazemi2016}
 Alireza Kazemi, Reza Rabiei, Hamid Moghaddasi, and Ghasem Deimazar.
@@ -185,6 +230,14 @@ J.~Keasberry, I.~Scott, C.~Sullivan, A.~Staib, and R.~Ashby.
   organisational impacts of ehealth technologies in hospital practice.
 \newblock \emph{Australian Health Review}, 41:\penalty0 646--664, 2017.
 \newblock \doi{10.1071/AH16233}.
+
+\bibitem[Keller et~al.(2023)Keller, Lindenmeyer, Blattmann, Gaebel, Schneider,
+  Neumuth, and Franke]{keller2023using}
+Johannes Keller, Adrian Lindenmeyer, Malte Blattmann, Jan Gaebel, Daniel
+  Schneider, Thomas Neumuth, and Stefan Franke.
+\newblock Using digital twins to support multiple stages of the patient
+  journey.
+\newblock In \emph{dHealth 2023}, pages 227--232. IOS Press, 2023.
 
 \bibitem[Kohn et~al.(2000)Kohn, Corrigan, and Donaldson]{kohn2000}
 L.~T. Kohn, J.~M. Corrigan, and M.~S. Donaldson.
@@ -206,6 +259,20 @@ S.~C. Lin, A.~K. Jha, and J.~Adler-Milstein.
   after systems have time to mature.
 \newblock \emph{Health Affairs}, 37:\penalty0 1128--1135, 2018.
 \newblock \doi{10.1377/hlthaff.2017.1658}.
+
+\bibitem[López et~al.(2021)López, Svensson, and Wallerstedt]{López2021}
+Naldy~Parodi López, Staffan Svensson, and Sven Wallerstedt.
+\newblock Association between recorded medication reviews in primary care and
+  adequate drug treatment management – a cross-sectional study.
+\newblock \emph{Scandinavian Journal of Primary Health Care}, 2021.
+\newblock \doi{10.1080/02813432.2021.1973239}.
+
+\bibitem[Machado et~al.(2023)Machado, Rodrigues, Sousa, and
+  Gomes]{machado2023drug}
+Jos{\'e} Machado, Carla Rodrigues, Regina Sousa, and Luis~Mendes Gomes.
+\newblock Drug--drug interaction extraction-based system: An natural language
+  processing approach.
+\newblock \emph{Expert Systems}, page e13303, 2023.
 
 \bibitem[Mahoney et~al.(2007)Mahoney, Berard-Collins, Coleman, Amaral, and
   Cotter]{mahoney2007}
@@ -283,11 +350,19 @@ S.~Newman.
 \newblock \emph{Building Microservices: Designing Fine-Grained Systems}.
 \newblock O'Reilly Media, 2nd edition, 2021.
 
-\bibitem[Nkenyereye and Jang(2016)]{nkenyereye2016}
+\bibitem[Nkenyereye and Jang(2016{\natexlab{a}})]{nkenyereye2016}
 L.~Nkenyereye and J.~W. Jang.
 \newblock Performance evaluation of server-side javascript for healthcare hub
   server in remote healthcare monitoring system.
-\newblock \emph{Procedia Computer Science}, 98:\penalty0 382--387, 2016.
+\newblock \emph{Procedia Computer Science}, 98:\penalty0 382--387,
+  2016{\natexlab{a}}.
+
+\bibitem[Nkenyereye and Jang(2016{\natexlab{b}})]{nkenyereye2016performance}
+Lionel Nkenyereye and Jong-Wook Jang.
+\newblock Performance evaluation of server-side javascript for healthcare hub
+  server in remote healthcare monitoring system.
+\newblock \emph{Procedia Computer Science}, 98:\penalty0 382--387,
+  2016{\natexlab{b}}.
 
 \bibitem[Radley et~al.(2013)Radley, Wasserman, Olsho, Shoemaker, Spranca, and
   Bradshaw]{radley2013}
@@ -314,10 +389,13 @@ R.~Rozenblum, R.~Rodriguez-Monguio, L.~A. Volk, K.~J. Forsythe, S.~Myers,
   27:\penalty0 801--807, 2020.
 \newblock \doi{10.1093/jamia/ocaa017}.
 
-\bibitem[{Serviço Nacional de Saúde}(2019)]{sns2019}
-{Serviço Nacional de Saúde}.
-\newblock Plano de ação para a transformação digital do sns.
-\newblock SNS, Lisboa, Portugal, 2019.
+\bibitem[Russell(2023)]{Russell2023}
+Cynthia~L. Russell.
+\newblock A descriptive, correlational study of perceptions of adult kidney
+  transplant recipients and those waiting for a kidney transplant about
+  managing their medications during a pandemic.
+\newblock \emph{Progress in Transplantation}, 2023.
+\newblock \doi{10.1177/15269248231212906}.
 
 \bibitem[Shermock et~al.(2023)Shermock, Shermock, and Schepel]{shermock2023}
 Susan~B. Shermock, Kenneth~M. Shermock, and Lotta~L. Schepel.
@@ -326,6 +404,22 @@ Susan~B. Shermock, Kenneth~M. Shermock, and Lotta~L. Schepel.
 \newblock \emph{International Journal of Environmental Research and Public
   Health}, 20\penalty0 (17):\penalty0 6680, 2023.
 \newblock \doi{10.3390/ijerph20176680}.
+
+\bibitem[Stanojevic et~al.(2023)Stanojevic, Bennett, Sabanovic, Collins,
+  Baugus~Henkel, Henkel, and Piatt]{stanojevic2023conceptualizing}
+Cedomir Stanojevic, Casey~C Bennett, Selma Sabanovic, Sawyer Collins, Kenna
+  Baugus~Henkel, Zachary Henkel, and Jennifer~A Piatt.
+\newblock Conceptualizing socially-assistive robots as a digital therapeutic
+  tool in healthcare.
+\newblock \emph{Frontiers in digital health}, 5:\penalty0 1208350, 2023.
+
+\bibitem[Tukukino et~al.(2022)Tukukino, López, Svensson, and
+  Wallerstedt]{Tukukino2022}
+Carina Tukukino, Naldy~Parodi López, Staffan Svensson, and Sven Wallerstedt.
+\newblock Drug interaction alerts in older primary care patients, and related
+  medically justified actions.
+\newblock \emph{European Journal of Clinical Pharmacology}, 2022.
+\newblock \doi{10.1007/s00228-022-03292-4}.
 
 \bibitem[Vaghasiya et~al.(2021)Vaghasiya, Penm, Kuan, Gunja, Liu, Kim, Petrina,
   and Poon]{vaghasiya2021}
@@ -370,15 +464,5 @@ J.~Zhao, Y.~Zhang, D.~C. Schwebel, and M.~Zhu.
 \newblock Artificial intelligence in healthcare: A comprehensive review.
 \newblock \emph{Nature Medicine}, 27:\penalty0 727--735, 2021.
 \newblock \doi{10.1038/s41591-021-01273-1}.
-
-\bibitem[Zheng et~al.(2021)Zheng, Lichtner, Van~Dort, and Baysari]{zheng2021}
-W.~Y. Zheng, V.~Lichtner, B.~A. Van~Dort, and M.~T. Baysari.
-\newblock The impact of introducing automated dispensing cabinets, barcode
-  medication administration, and closed-loop electronic medication management
-  systems on work processes and safety of controlled medications in hospitals:
-  A systematic review.
-\newblock \emph{Research in Social and Administrative Pharmacy}, 17:\penalty0
-  832--841, 2021.
-\newblock \doi{10.1016/j.sapharm.2020.08.001}.
 
 \end{thebibliography}

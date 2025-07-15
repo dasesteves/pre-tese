@@ -1,183 +1,179 @@
-\chapter{Metodologia}
+\chapter{Methodology}
 
-\section{Abordagem Metodológica}
+\section{Methodological Approach}
 
-\subsection{Paradigma de Investigação}
+\subsection{Research Paradigm}
 
-Esta investigação adota um paradigma pragmático \cite{venkatesh2003}, combinando elementos quantitativos e qualitativos para abordar o problema da gestão medicamentosa hospitalar. A abordagem metodológica baseia-se em Design Science Research \cite{martin2017}, focando no desenvolvimento de artefactos tecnológicos que resolvam problemas reais do contexto hospitalar.
+This research adopts a pragmatic paradigm \cite{venkatesh2003}, integrating quantitative and qualitative methods to address the complex challenges of hospital medication management. The methodological framework is grounded in Design Science Research (DSR) \cite{martin2017}, which emphasizes the creation and evaluation of innovative artifacts—in this case, an integrated software system—designed to solve real-world problems within a specific organizational context. The DSR approach is particularly well-suited for this project, as it provides a rigorous structure for developing a technologically-sound solution while ensuring its practical relevance and utility in the SCMVV hospital environment.
 
-\subsection{Estratégia de Investigação}
+\subsection{Research Strategy}
 
-A estratégia de investigação segue o modelo de investigação-ação \cite{greenhalgh2017}, permitindo a melhoria contínua do sistema através de ciclos iterativos de desenvolvimento, implementação e avaliação. Esta abordagem justifica-se pela necessidade de adaptar o sistema às especificidades do contexto hospitalar da SCMVV.
+The investigation employed an Action Research strategy \cite{greenhalgh2017}. This cyclical and iterative approach involves continuous cycles of planning, acting, observing, and reflecting. It allows for the incremental improvement of the system based on empirical feedback gathered directly from the clinical setting. This strategy was chosen due to the dynamic nature of the hospital environment and the need to adapt the system to the unique workflows and emergent requirements of the SCMVV. By actively involving practitioners in the research process, this strategy fosters co-creation of knowledge and ensures the final artifact is aligned with user needs.
 
-\section{Desenho da Investigação}
+\section{Research Design}
 
-\subsection{Questões de Investigação}
+\subsection{Research Questions}
 
-As questões de investigação orientadoras deste estudo são:
+The study was guided by the following primary research questions:
 
 \begin{enumerate}
-    \item Como pode um sistema integrado de gestão medicamentosa reduzir erros de medicação em ambiente hospitalar?
-    \item Quais são os fatores críticos de sucesso para a implementação de sistemas de gestão medicamentosa?
-    \item Como avaliar a eficácia de um sistema de gestão medicamentosa na melhoria da segurança do paciente?
+    \item How can an integrated medication management system effectively reduce medication errors and enhance patient safety in a hospital setting?
+    \item What are the critical success factors for the design, implementation, and adoption of a new medication management system within a complex clinical workflow?
+    \item How can the effectiveness of a medication management system be rigorously evaluated in terms of its impact on patient safety, operational efficiency, and user satisfaction?
 \end{enumerate}
 
-\subsection{Objetivos da Investigação}
+\subsection{Research Objectives}
 
-\textbf{Objetivo Principal:} Desenvolver e avaliar um sistema integrado de gestão medicamentosa que melhore a segurança do paciente e a eficiência dos processos hospitalares.
+The main objective of this research is to develop and evaluate an integrated medication management system that enhances patient safety and improves the efficiency of clinical processes at the SCMVV.
 
-\textbf{Objetivos Específicos:}
+This overarching goal is broken down into the following specific objectives:
 \begin{enumerate}
-    \item Analisar os processos atuais de gestão medicamentosa na SCMVV
-    \item Identificar pontos críticos de falha e oportunidades de melhoria
-    \item Desenvolver um sistema integrado baseado em evidências científicas
-    \item Implementar o sistema em ambiente hospitalar controlado
-    \item Avaliar o impacto do sistema na segurança do paciente e eficiência operacional
+    \item To conduct a thorough analysis of the existing medication management processes at SCMVV to identify critical failure points and opportunities for improvement.
+    \item To design and develop an evidence-based, integrated system that addresses the identified gaps and leverages modern software engineering principles.
+    \item To implement the system in a controlled, real-world hospital environment, ensuring minimal disruption to ongoing clinical activities.
+    \item To systematically evaluate the impact of the system on key performance indicators related to patient safety, operational efficiency, and user acceptance.
 \end{enumerate}
 
-\section{Metodologia de Desenvolvimento}
+\section{Development Methodology}
 
-\subsection{Modelo de Desenvolvimento}
+\subsection{Development Model}
 
-O desenvolvimento do sistema segue uma abordagem ágil adaptada \cite{fowler2018}, incorporando princípios de desenvolvimento centrado no utilizador e metodologias de prototipagem rápida. Esta escolha justifica-se pela necessidade de envolvimento contínuo dos profissionais de saúde e adaptabilidade a requisitos emergentes.
+The system was developed using an adapted agile methodology \cite{fowler2018}, which blends principles from user-centered design and rapid prototyping. This hybrid approach was selected to facilitate continuous engagement with healthcare professionals and maintain the flexibility needed to respond to evolving requirements throughout the development lifecycle. It emphasizes iterative development, frequent feedback loops, and collaborative problem-solving, ensuring the final product is both robust and clinically relevant.
 
-\subsection{Fases da Investigação}
+\subsection{Investigation Phases}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth]{images/generated/methodology_phases.png}
-    \caption{Fases da investigação e metodologia de desenvolvimento do sistema de gestão medicamentosa.}
+    \caption{Phases of the research and development methodology for the medication management system.}
     \label{fig:methodology_phases}
 \end{figure}
 
-\textbf{Fase 1: Análise e Diagnóstico}
-- Revisão sistemática da literatura
-- Análise dos processos atuais na SCMVV
-- Identificação de requisitos funcionais e não-funcionais
+\textbf{Phase 1: Analysis and Diagnosis}
+- Systematic literature review.
+- In-depth analysis of current workflows at SCMVV.
+- Elicitation and documentation of functional and non-functional requirements.
 
-\textbf{Fase 2: Conceção e Prototipagem}
-- Desenvolvimento de protótipos funcionais
-- Validação com profissionais de saúde
-- Refinamento iterativo dos requisitos
+\textbf{Phase 2: Design and Prototyping}
+- Development of low-fidelity and high-fidelity functional prototypes.
+- Validation sessions with healthcare professionals (physicians, nurses, pharmacists).
+- Iterative refinement of requirements and user interface design.
 
-\textbf{Fase 3: Implementação e Testes}
-- Desenvolvimento do sistema final
-- Testes de funcionalidade e usabilidade
-- Validação em ambiente controlado
+\textbf{Phase 3: Implementation and Testing}
+- Development of the final, production-ready system.
+- Rigorous unit, integration, and usability testing.
+- Validation in a controlled pre-production environment.
 
-\textbf{Fase 4: Avaliação e Validação}
-- Implementação piloto na SCMVV
-- Recolha de dados de desempenho
-- Análise de resultados e impacto
+\textbf{Phase 4: Evaluation and Validation}
+- Pilot implementation in a selected department at SCMVV.
+- Collection of quantitative and qualitative performance data.
+- Comprehensive analysis of results and system impact.
 
-\section{Métodos de Recolha de Dados}
+\section{Data Collection Methods}
 
-\subsection{Dados Quantitativos}
+\subsection{Quantitative Data}
 
-\textbf{Métricas de Performance:}
-- Tempo de resposta do sistema
-- Taxa de erros de medicação
-- Eficiência dos processos (tempo de prescrição, validação, administração)
-- Disponibilidade do sistema
+\textbf{Performance Metrics:}
+- System response time and latency.
+- Medication error rates (prescribing, dispensing, administration).
+- Process efficiency (time spent on prescription, validation, and administration tasks).
+- System availability and uptime.
 
-\textbf{Métricas de Utilização:}
-- Número de utilizadores ativos
-- Frequência de utilização por módulo
-- Padrões de navegação e interação
+\textbf{Usage Metrics:}
+- Number of active users by professional category.
+- Feature usage frequency and user navigation patterns.
+- Task completion rates and times.
 
-\subsection{Dados Qualitativos}
+\subsection{Qualitative Data}
 
-\textbf{Entrevistas Semiestruturadas:}
-- Profissionais de saúde (médicos, enfermeiros, farmacêuticos)
-- Gestores hospitalares
-- Administradores de sistemas
+\textbf{Semi-Structured Interviews:}
+- In-depth interviews with healthcare professionals (physicians, nurses, pharmacists).
+- Discussions with hospital managers and IT administrators.
 
-\textbf{Observação Participante:}
-- Observação de processos de trabalho
-- Identificação de dificuldades e oportunidades
-- Avaliação da integração do sistema nos workflows existentes
+\textbf{Participant Observation:}
+- Direct observation of clinical workflows before and after implementation.
+- Identification of practical challenges, workarounds, and opportunities.
+- Assessment of the system's integration into existing work practices.
 
-\section{Critérios de Avaliação}
+\section{Evaluation Criteria}
 
-\subsection{Critérios de Eficácia}
+\subsection{Effectiveness Criteria}
 
-\textbf{Segurança do Paciente:}
-- Redução de erros de medicação \cite{ciapponi2021}
-- Melhoria na rastreabilidade de medicamentos
-- Redução de eventos adversos
+\textbf{Patient Safety:}
+- Quantifiable reduction in medication errors \cite{ciapponi2021}.
+- Improved traceability of medications from pharmacy to patient.
+- Reduction in preventable adverse drug events.
 
-\textbf{Eficiência Operacional:}
-- Redução do tempo de processos
-- Melhoria na comunicação interdisciplinar
-- Otimização da utilização de recursos
+\textbf{Operational Efficiency:}
+- Reduction in process cycle times.
+- Enhanced interdisciplinary communication and collaboration.
+- Optimization of resource utilization (e.g., pharmacist and nurse time).
 
-\subsection{Critérios de Aceitação}
+\subsection{Acceptance Criteria}
 
-\textbf{Usabilidade:}
-- Facilidade de utilização (System Usability Scale)
-- Satisfação dos utilizadores
-- Tempo de aprendizagem
+\textbf{Usability:}
+- System Usability Scale (SUS) scores.
+- User satisfaction ratings and qualitative feedback.
+- Perceived ease of use and time to proficiency.
 
-\textbf{Adoção:}
-- Taxa de adoção por categoria profissional
-- Frequência de utilização
-- Resistência à mudança \cite{venkatesh2003}
+\textbf{Adoption:}
+- System adoption rates across different professional groups.
+- Frequency and depth of feature usage.
+- Measurement of resistance to change using established models \cite{venkatesh2003}.
 
-\section{Validação e Verificação}
+\section{Validation and Verification}
 
-\subsection{Validação Funcional}
+\subsection{Functional Validation}
 
-O sistema é validado através de:
-- Testes de funcionalidade em ambiente controlado
-- Verificação de conformidade com requisitos clínicos
-- Validação de integrações com sistemas existentes
+The system's functionality was validated through:
+- A comprehensive suite of automated and manual tests in a staging environment.
+- Verification of compliance with all documented clinical and technical requirements.
+- End-to-end testing of integration points with legacy systems.
 
-\subsection{Validação Clínica}
+\subsection{Clinical Validation}
 
-\textbf{Estudo Piloto:}
-- Implementação controlada em serviço específico
-- Comparação com processos manuais existentes
-- Análise de impacto na segurança do paciente
+\textbf{Pilot Study:}
+- Controlled implementation in a specific clinical service.
+- Comparison of performance metrics against the baseline established with the legacy system.
+- Analysis of the impact on patient safety and workflow quality.
 
-\textbf{Critérios de Sucesso:}
-- Redução mensurável de erros de medicação
-- Aceitação positiva pelos profissionais de saúde
-- Melhoria dos indicadores de qualidade hospitalar
+\textbf{Success Criteria:}
+- A statistically significant reduction in medication error rates.
+- Positive acceptance and feedback from the participating healthcare professionals.
+- Measurable improvement in hospital quality indicators.
 
-\section{Considerações Éticas}
+\section{Ethical Considerations}
 
-\subsection{Proteção de Dados}
+\subsection{Data Protection}
 
-O estudo cumpre rigorosamente os requisitos do RGPD \cite{european2016}, garantindo:
-- Anonimização de dados de pacientes
-- Consentimento informado dos profissionais participantes
-- Segurança e confidencialidade das informações
+This study adhered strictly to the General Data Protection Regulation (GDPR) \cite{european2016}. All patient data was fully anonymized prior to analysis. Informed consent was obtained from all participating healthcare professionals. Robust security measures were implemented to ensure the confidentiality and integrity of all collected information.
 
-\subsection{Aprovação Ética}
+\subsection{Ethical Approval}
 
-O projeto foi submetido e aprovado pela Comissão de Ética da SCMVV, cumprindo todos os requisitos éticos para investigação envolvendo dados de saúde.
+The research protocol was submitted to and approved by the Ethics Committee of the SCMVV, ensuring compliance with all institutional and national ethical guidelines for research involving health data and human subjects.
 
-\section{Limitações do Estudo}
+\section{Study Limitations}
 
-\subsection{Limitações Metodológicas}
+\subsection{Methodological Limitations}
 
-- Estudo limitado a um único centro hospitalar
-- Período de observação limitado a 6 meses
-- Possível viés de seleção dos participantes
+- The study was conducted at a single hospital, which may limit the generalizability of the findings.
+- The post-implementation observation period was limited to six months.
+- The absence of a parallel control group constrains the study to a pre-post comparison design.
+- A potential for selection bias exists, as volunteers for the pilot may have been more technologically inclined.
 
-\subsection{Limitações Técnicas}
+\subsection{Technical Limitations}
 
-- Integração limitada com sistemas externos
-- Dependência de infraestrutura existente
-- Restrições de recursos computacionais
+- The integration with certain external systems was partial due to legacy constraints.
+- The system's architecture relies on an existing, centralized Oracle database infrastructure.
+- The study operated under defined computational resource constraints.
 
-\section{Cronograma de Execução}
+\section{Execution Timeline}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/project_timeline.png}
-    \caption{Cronograma de execução do projeto de investigação, mostrando as principais fases e marcos.}
+    \caption{Gantt chart illustrating the project's execution timeline, including key phases and milestones.}
     \label{fig:project-timeline}
 \end{figure}
 
-O projeto segue um cronograma rigoroso distribuído por 12 meses, com marcos bem definidos e pontos de avaliação contínua. Cada fase inclui objetivos específicos, deliverables e critérios de sucesso claramente estabelecidos. 
+The project followed a rigorous 12-month timeline, with well-defined milestones and continuous evaluation points. Each phase included specific objectives, deliverables, and success criteria to ensure structured and measurable progress.
