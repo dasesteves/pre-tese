@@ -51,6 +51,6 @@
 \contentsline {section}{\numberline {6.2}Anticipated Challenges and Contextualization}{24}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Limitations and Avenues for Future Research}{25}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Conclusion and Future Work}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Synthesis and Principal Contributions}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Synthesis and Potential Contributions}{27}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Future Work and Research Agenda}{27}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Final Remarks}{28}{section.7.3}%

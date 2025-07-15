@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 17:01
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1563,7 +1563,20 @@ File: images/logos/EE.jpg Graphic file (type bmp)
 [1
 
 
-]) (preamble/Acknowledgements.tex
+]
+Overfull \hbox (1.79475pt too wide) in paragraph at lines 18--19
+[]\TU/NewsGotT.ttf(1)/m/n/12 Adopting a \TU/NewsGotT.ttf(1)/m/it/12 Design Scie
+nce Research \TU/NewsGotT.ttf(1)/m/n/12 (DSR) methodology, the project will cre
+ate a technological artifact—
+ []
+
+
+Overfull \hbox (23.61917pt too wide) in paragraph at lines 18--19
+\TU/NewsGotT.ttf(1)/m/n/12 a web-based system featuring a microservices archite
+cture (Node.js) and a reactive frontend (TypeScript/React)—
+ []
+
+) (preamble/Acknowledgements.tex
 
 [2
 
@@ -1671,6 +1684,10 @@ Chapter 4.
 
 [13]
 
+LaTeX Warning: Reference `sec:KPIs' on page 14 undefined on input line 43.
+
+
+
 [14]) (chapters/Resultados.tex
 
 [15]
@@ -1745,16 +1762,23 @@ Chapter 7.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `pre-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 7AC4EAF6D6A4FA4D1A8BF68CDFFD9E35;10561.
+(rerunfilecheck)             Checksum: 2DDBED5FA506C8C268F11A3EFD830CF2;10561.
  ) 
 Here is how much of TeX's memory you used:
- 39718 strings out of 403337
- 825217 string characters out of 5463040
+ 39721 strings out of 403337
+ 825266 string characters out of 5463040
  1341115 words of memory out of 5000000
- 67425 multiletter control sequences out of 15000+600000
+ 67428 multiletter control sequences out of 15000+600000
  632650 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 113i,10n,119p,1304b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,10n,119p,1024b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on pre-tese.pdf (45 pages).
