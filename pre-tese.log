@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 12:38
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2060,13 +2060,6 @@ Package natbib Warning: Citation `newman2021' on page 31 undefined on input lin
 e 19.
 
 
-Overfull \hbox (5.45381pt too wide) in paragraph at lines 19--20
-[]\TU/NewsGotT.ttf(1)/b/n/12 Flexible Microservices Architecture\TU/NewsGotT.tt
-f(1)/m/n/12 : The choice of a microservices-based architecture \TU/NewsGotT.ttf
-(1)/b/n/12 ? \TU/NewsGotT.ttf(1)/m/n/12 proved
- []
-
-
 Package natbib Warning: Citation `kvarnstrom2023' on page 31 undefined on input
  line 20.
 
@@ -2084,69 +2077,79 @@ Package natbib Warning: Citation `jiang2014' on page 32 undefined on input line
  31.
 
 
+Package natbib Warning: Citation `rogers2003' on page 32 undefined on input lin
+e 40.
+
+
+Overfull \hbox (9.71292pt too wide) in paragraph at lines 41--42
+[]\TU/NewsGotT.ttf(1)/b/n/12 Re-engineering Entrenched Workflows\TU/NewsGotT.tt
+f(1)/m/n/12 : Altering clinical processes institutionalized over decades
+ []
+
+
 
 [32]
 
-Package natbib Warning: Citation `may2013' on page 33 undefined on input line 5
-0.
+Package natbib Warning: Citation `may2013' on page 33 undefined on input line 4
+8.
 
 
 Package natbib Warning: Citation `fowler2018' on page 33 undefined on input lin
-e 53.
+e 51.
 
 
 Package natbib Warning: Citation `hertzum2022' on page 33 undefined on input li
-ne 61.
+ne 59.
 
 
 Package natbib Warning: Citation `adler2021' on page 33 undefined on input line
- 62.
+ 60.
+
+
+Package natbib Warning: Citation `greenhalgh2017' on page 33 undefined on input
+ line 71.
 
 
 
 [33]
 
-Package natbib Warning: Citation `greenhalgh2017' on page 34 undefined on input
- line 74.
-
-
-Package natbib Warning: Citation `lin2018' on page 34 undefined on input line 8
-2.
+Package natbib Warning: Citation `lin2018' on page 34 undefined on input line 7
+9.
 
 
 Package natbib Warning: Citation `mandl2020' on page 34 undefined on input line
- 84.
+ 81.
 
 
 Package natbib Warning: Citation `bates2021' on page 34 undefined on input line
- 85.
+ 82.
 
 
 Package natbib Warning: Citation `mcgreevey2020' on page 34 undefined on input 
-line 95.
+line 91.
+
+
+Package natbib Warning: Citation `vaghasiya2021' on page 34 undefined on input 
+line 92.
+
+
+Package natbib Warning: Citation `kvarnstrom2023' on page 34 undefined on input
+ line 93.
 
 
 
 [34]
 
-Package natbib Warning: Citation `vaghasiya2021' on page 35 undefined on input 
-line 96.
-
-
-Package natbib Warning: Citation `kvarnstrom2023' on page 35 undefined on input
- line 97.
-
-
 Package natbib Warning: Citation `rozenblum2020' on page 35 undefined on input 
-line 104.
+line 99.
 
 
 Package natbib Warning: Citation `may2013' on page 35 undefined on input line 1
-05.
+00.
 
 
 Package natbib Warning: Citation `donabedian1988' on page 35 undefined on input
- line 106.
+ line 101.
 
 ) (chapters/Conclusao.tex
 
@@ -2157,24 +2160,20 @@ Package natbib Warning: Citation `ciapponi2021' on page 36 undefined on input l
 ine 7.
 
 
-Package natbib Warning: Citation `venkatesh2003' on page 36 undefined on input 
-line 13.
-
-
 Package natbib Warning: Citation `adler2021' on page 36 undefined on input line
- 14.
+ 13.
 
 
 Package natbib Warning: Citation `keasberry2017' on page 36 undefined on input 
-line 22.
+line 21.
 
 
 Package natbib Warning: Citation `newman2021' on page 36 undefined on input lin
-e 23.
+e 22.
 
 
 Package natbib Warning: Citation `may2013' on page 36 undefined on input line 2
-4.
+3.
 
 
 
@@ -2183,56 +2182,58 @@ Package natbib Warning: Citation `may2013' on page 36 undefined on input line 2
 ]
 
 Package natbib Warning: Citation `donabedian1988' on page 37 undefined on input
- line 25.
+ line 24.
 
 
 Package natbib Warning: Citation `bates2021' on page 37 undefined on input line
- 35.
+ 34.
 
 
 Package natbib Warning: Citation `zhao2021' on page 37 undefined on input line 
-35.
+34.
 
 
 Package natbib Warning: Citation `mandl2020' on page 37 undefined on input line
- 37.
-
-
-Package natbib Warning: Citation `franzoso2014' on page 37 undefined on input l
-ine 38.
+ 36.
 
 
 Package natbib Warning: Citation `rozenblum2020' on page 37 undefined on input 
-line 44.
+line 42.
 
 
 Package natbib Warning: Citation `berwick2008' on page 37 undefined on input li
-ne 47.
+ne 44.
 
 
 
 [37]
 
 Package natbib Warning: Citation `greenhalgh2017' on page 38 undefined on input
- line 53.
+ line 51.
 
 
 Package natbib Warning: Citation `holden2011' on page 38 undefined on input lin
-e 55.
+e 53.
 
 
 Package natbib Warning: Citation `adler2021' on page 38 undefined on input line
- 56.
+ 54.
 
 
 Package natbib Warning: Citation `greenhalgh2017' on page 38 undefined on input
- line 61.
+ line 59.
 
 
 Package natbib Warning: Citation `who2022' on page 38 undefined on input line 6
-3.
+1.
 
-) (pre-tese.bbl
+)
+Overfull \hbox (0.3451pt too wide) in paragraph at lines 61--93
+[]\TU/NewsGotT.ttf(1)/m/n/12 The system developed herein is more than a technic
+al artifact; it represents a new operational paradigm
+ []
+
+(pre-tese.bbl
 
 [38]
 
@@ -2265,15 +2266,15 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
 Package rerunfilecheck Info: File `pre-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 7EE64983D40F3854E4E329CD89EB322B;22533.
+(rerunfilecheck)             Checksum: DD7C6EB96D9DE599083F3A98885DF045;22797.
  ) 
 Here is how much of TeX's memory you used:
- 39669 strings out of 403337
- 825016 string characters out of 5463040
+ 39672 strings out of 403337
+ 825070 string characters out of 5463040
  1344908 words of memory out of 5000000
- 67372 multiletter control sequences out of 15000+600000
+ 67375 multiletter control sequences out of 15000+600000
  632658 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 113i,6n,119p,1236b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,6n,119p,1236b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on pre-tese.pdf (57 pages).
