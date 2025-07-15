@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,15 @@ J.~Adler-Milstein, A.~J. Holmgren, P.~Kralovec, C.~Worzala, T.~Searcy, and
   28:\penalty0 1120--1124, 2021.
 \newblock \doi{10.1093/jamia/ocab035}.
 
+\bibitem[Austin et~al.(2018)Austin, Smith, and Tariq]{austin2018}
+J.~A. Austin, I.~R. Smith, and A.~Tariq.
+\newblock The impact of closed-loop electronic medication management on time to
+  first dose: A comparative study between paper and digital hospital
+  environments.
+\newblock \emph{International Journal of Pharmacy Practice}, 26:\penalty0
+  526--533, 2018.
+\newblock \doi{10.1111/ijpp.12432}.
+
 \bibitem[Bates et~al.(2021)Bates, Levine, Syrowatka, Kuznetsova, Craig, Rui,
   Jackson, and Rhee]{bates2021}
 D.~W. Bates, D.~Levine, A.~Syrowatka, M.~Kuznetsova, K.~J.~T. Craig, A.~Rui,
@@ -23,6 +32,14 @@ D.~W. Bates, D.~Levine, A.~Syrowatka, M.~Kuznetsova, K.~J.~T. Craig, A.~Rui,
   scoping review.
 \newblock \emph{NPJ Digital Medicine}, 4:\penalty0 54, 2021.
 \newblock \doi{10.1038/s41746-021-00423-6}.
+
+\bibitem[Bates et~al.(2014)Bates, Kuperman, and Jha]{bates2014}
+David~W. Bates, Gilad~J. Kuperman, and Ashish~K. Jha.
+\newblock Does the use of computerized provider order entry reduce medication
+  errors? a review of the evidence.
+\newblock \emph{Journal of the American Medical Informatics Association},
+  21\penalty0 (4):\penalty0 735--741, 2014.
+\newblock \doi{10.1136/amiajnl-2013-002374}.
 
 \bibitem[Belle et~al.(2013{\natexlab{a}})Belle, Kon, and Najarian]{belle2013}
 A.~Belle, M.~A. Kon, and K.~Najarian.
@@ -244,14 +261,12 @@ L.~T. Kohn, J.~M. Corrigan, and M.~S. Donaldson.
 \newblock \emph{To Err is Human: Building a Safer Health System}.
 \newblock National Academy Press, Washington, DC, 2000.
 
-\bibitem[Kvarnström et~al.(2023)Kvarnström, Hedberg, and
-  Airaksinen]{kvarnstrom2023}
-S.~Kvarnström, B.~Hedberg, and M.~Airaksinen.
-\newblock Factors contributing to medication errors in hospitals: A systematic
-  review.
-\newblock \emph{International Journal of Clinical Pharmacy}, 45:\penalty0
-  1234--1245, 2023.
-\newblock \doi{10.1007/s11096-023-01526-8}.
+\bibitem[Lewis(2018)]{lewis2018}
+James~R. Lewis.
+\newblock The system usability scale: Past, present, and future.
+\newblock \emph{International Journal of Human–Computer Interaction},
+  34\penalty0 (7):\penalty0 577--590, 2018.
+\newblock \doi{10.1080/10447318.2018.1455307}.
 
 \bibitem[Lin et~al.(2018)Lin, Jha, and Adler-Milstein]{lin2018}
 S.~C. Lin, A.~K. Jha, and J.~Adler-Milstein.
@@ -339,6 +354,13 @@ A.~Mulac, K.~Taxis, E.~Hagesaether, and A.~G. Granas.
 S.~Newman.
 \newblock \emph{Building Microservices: Designing Fine-Grained Systems}.
 \newblock O'Reilly Media, 2nd edition, 2021.
+
+\bibitem[Nielsen(2012)]{nielsen2012}
+Jakob Nielsen.
+\newblock Usability 101: Introduction to usability.
+\newblock \emph{Nielsen Norman Group}, 2012.
+\newblock URL
+  \url{https://www.nngroup.com/articles/usability-101-introduction-to-usability/}.
 
 \bibitem[Nkenyereye and Jang(2016{\natexlab{a}})]{nkenyereye2016}
 L.~Nkenyereye and J.~W. Jang.

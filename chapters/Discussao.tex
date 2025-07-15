@@ -1,102 +1,25 @@
 \chapter{Discussion}
 
-This chapter provides an in-depth analysis of the results, contextualizing the findings within the existing body of scientific literature. It critically examines the factors contributing to the project's success, deconstructs the challenges encountered, and distills the lessons learned. The chapter concludes by discussing the study's limitations and exploring the broader implications for clinical practice and hospital management.
+This chapter provides an in-depth analysis of the results presented previously, contextualizing the findings within the existing body of scientific literature. It critically examines the factors that contributed to the project's success, deconstructs the challenges encountered, and distills the principal lessons learned. The chapter concludes by discussing the study's limitations and exploring the broader implications of this research for both clinical practice and hospital management.
 
 \section{Interpretation of Key Findings}
 
-\subsection{Efficacy of the Intervention}
+The empirical results confirm that the developed system successfully met its primary objectives. The observed 73% reduction in medication errors is a statistically significant finding that positions this intervention among the most effective reported in the literature, underscoring the profound impact of integrated, user-centered systems on patient safety \cite{ciapponi2021,radley2013}. This was complemented by an 80% improvement in system response times, a key technical achievement that directly enhanced clinical workflow efficiency and correlated strongly with a high user satisfaction score of 8.8 out of 10 \cite{holden2011, lewis2018}. From an economic standpoint, the projected 18-month ROI provides a compelling argument for the financial viability of such modernization initiatives \cite{adler2021}.
 
-The results confirm that the developed system successfully met its primary objectives. The observed 73% reduction in medication errors \cite{ciapponi2021,radley2013} is a statistically significant finding that positions this intervention among the most effective reported in the literature, underscoring the profound impact of integrated, user-centered systems on patient safety.
+A retrospective analysis identified several critical success factors. Fundamentally, the adoption of a \textbf{user-centered co-design philosophy}, where clinicians were integral partners in the development process, fostered a sense of ownership that was crucial for adoption \cite{venkatesh2003}. This was supported by the \textbf{architectural flexibility} of the microservices paradigm, which enabled a phased, low-risk rollout \cite{newman2021}. Furthermore, a significant investment in a \textbf{comprehensive training program} and the presence of \textbf{sustained executive sponsorship} proved indispensable for navigating the sociotechnical complexities of the implementation.
 
-The concurrent 80% improvement in system response times was a key technical achievement that directly enhanced clinical workflow efficiency. This performance gain, corroborated by a high user satisfaction score of 8.8/10 \cite{holden2011}, suggests a strong correlation between system performance and user acceptance. From an economic standpoint, the projected 18-month ROI \cite{adler2021} provides a compelling argument for the financial viability and strategic value of such modernization initiatives.
+\section{Challenges, Lessons, and Contextualization}
 
-\subsection{Critical Success Factors}
+The project's implementation required overcoming significant technical and organizational hurdles. On the technical side, integrating with the poorly documented legacy system necessitated reverse-engineering core functionalities, a common challenge in healthcare IT \cite{keasberry2017}. The large data volumes also demanded advanced query optimization to meet real-time performance needs \cite{jiang2014}. Organizationally, managing resistance to change and re-engineering entrenched clinical workflows required a formal change management program, including the empowerment of clinical champions to drive adoption \cite{rogers2003}.
 
-Retrospective analysis identified four critical factors for the project's success:
+The execution of this project yielded several actionable insights. It validated that an incremental, agile-based methodology is not only viable but preferable in complex clinical environments \cite{may2013}. It also reinforced the value of rapid prototyping for early validation of clinical requirements and the critical importance of comprehensive, automated testing to ensure system stability \cite{fowler2018}.
 
-\begin{enumerate}
-    \item \textbf{User-Centered Co-Design}: Beyond simple involvement, the adoption of a co-design philosophy where clinicians were integral partners in the development process was fundamental \cite{venkatesh2003}. This ensured the system's features and workflows were ecologically valid, fostering a sense of ownership that drove adoption.
-    \item \textbf{Architectural Flexibility}: The microservices architecture \cite{newman2021} provided the necessary modularity and scalability. This technical choice was strategic, as it enabled a phased rollout that minimized disruption to critical hospital operations and de-risked the overall implementation.
-    \item \textbf{Investment in Training}: The allocation of significant resources to a comprehensive training program (40+ hours per user) \cite{kvarnstrom2023} was a critical determinant of success. It highlights that sociotechnical interventions depend as much on human capital development as on technological robustness.
-    \item \textbf{Sustained Executive Sponsorship}: Consistent and visible support from executive leadership was indispensable. It provided the project with necessary resources, organizational legitimacy, and the authority to navigate interdepartmental politics and overcome bureaucratic inertia.
-\end{enumerate}
+When contextualized with existing literature, the outcomes of this study are highly favorable. The 73% reduction in medication errors aligns well with the 81% median reduction reported in the meta-analysis by Radley et al. \cite{radley2013}. The user satisfaction score is notably higher than the industry average for electronic health records \cite{hertzum2022}, and the 18-month ROI is significantly faster than the 24-36 month average for hospital IT projects \cite{adler2021}, highlighting the success of the chosen architectural and implementation approach.
 
-\section{Challenges and Lessons Learned}
+\section{Limitations and Implications of the Study}
 
-\subsection{Technical Challenges Overcome}
+The study's findings should be interpreted in light of several limitations that offer clear avenues for future research. Methodologically, the single-center design at SCMVV limits the generalizability of the findings, and the six-month evaluation period, while sufficient for initial impact, does not capture long-term effects. The quasi-experimental design, lacking a parallel control group, also means the influence of confounding variables cannot be definitively excluded.
 
-The project's implementation required overcoming several significant technical hurdles:
-\begin{itemize}
-    \item \textbf{Legacy System Interoperability}: Integrating with the poorly documented AIDA-PCE system necessitated reverse-engineering its core functionalities, a common but high-risk challenge in healthcare IT \cite{keasberry2017}.
-    \item \textbf{Database Performance Optimization}: The large data volume in the legacy Oracle database demanded advanced query optimization and indexing strategies to meet the performance requirements of a real-time clinical system \cite{jiang2014}.
-    \item \textbf{Real-Time Data Synchronization}: Maintaining transactional consistency across distributed systems was a complex problem solved by implementing an event-driven architecture for data synchronization.
-    \item \textbf{Heterogeneous Session Management}: Implementing a secure and seamless Single Sign-On (SSO) across both modern web platforms and legacy clients was a complex identity management challenge.
-\end{itemize}
+Technically, the system remains dependent on a central Oracle database \cite{lin2018}, and its APIs are not yet fully conformant with the HL7 FHIR standard, a necessary step for deeper interoperability \cite{mandl2020}. Furthermore, the predictive analytics components envisioned in the initial design were not implemented in this phase \cite{bates2021}.
 
-\subsection{Organizational Challenges and Mitigation}
-
-The primary organizational challenges were sociotechnical in nature:
-\begin{itemize}
-    \item \textbf{Managing Resistance to Change}: Initial resistance from a subset of users (approx. 30\%) was anticipated based on established change models \cite{rogers2003}. This was proactively managed through a structured change management program involving targeted communication, peer-led training, and the empowerment of clinical champions.
-    \item \textbf{Re-engineering Entrenched Workflows}: Altering clinical processes institutionalized over decades was a significant undertaking. It required not just technological substitution but a fundamental re-engineering of work practices, guided by continuous user feedback.
-    \item \textbf{Ensuring Interdepartmental Alignment}: The project necessitated constant coordination between IT, pharmacy, and clinical departments. Establishing a cross-functional steering committee was crucial for aligning priorities and resolving conflicts.
-\end{itemize}
-
-\subsection{Key Lessons Learned}
-The project execution yielded several actionable insights for future health informatics projects:
-\begin{enumerate}
-    \item An incremental, agile-based implementation methodology is not only viable but preferable in complex clinical environments, as it effectively mitigates risk and allows for adaptation \cite{may2013}.
-    \item Rapid prototyping is an invaluable tool for validating clinical requirements and user interface designs early, thereby reducing the risk of costly late-stage rework.
-    \item A "documentation-as-a-deliverable" approach is essential for the long-term maintainability, scalability, and sustainability of the system.
-    \item A comprehensive, automated testing suite is a critical investment that ensures system stability and facilitates continuous integration and deployment \cite{fowler2018}.
-\end{enumerate}
-
-\section{Contextualizing Results with Literature}
-
-The key outcomes of this study are consistent with, and in some metrics exceed, established benchmarks in the literature.
-\begin{itemize}
-    \item The 73% reduction in medication errors aligns well with the 81% median reduction reported in the meta-analysis by Radley et al. \cite{radley2013}, confirming the system's high efficacy.
-    \item The user satisfaction score of 8.8/10 is notably higher than the 7.2/10 average for electronic health records reported by Hertzum \cite{hertzum2022}, suggesting the user-centered design was highly effective.
-    \item The 18-month ROI is significantly faster than the 24-36 month average for hospital IT projects \cite{adler2021}, highlighting the strong economic case for this specific architectural and implementation approach.
-    \item The final user adoption rate of 87% surpassed the 65-70% rate typically predicted by the Technology Acceptance Model (TAM) in similar contexts \cite{venkatesh2003}, likely due to the co-design strategy.
-\end{itemize}
-
-\section{Limitations of the Study}
-The study's findings should be interpreted in light of several limitations that offer avenues for future research.
-
-\subsection{Methodological Limitations}
-
-\begin{itemize}
-    \item \textbf{Single-Center Design}: As the research was conducted at a single institution, the findings' generalizability to other healthcare contexts may be limited.
-    \item \textbf{Duration of Evaluation}: The six-month post-implementation evaluation period is sufficient to demonstrate initial impact but not the long-term sustainability of the observed effects \cite{greenhalgh2017}.
-    \item \textbf{Quasi-Experimental Design}: The pre-post comparison design, while pragmatic, lacks a parallel control group, making it difficult to definitively exclude the influence of confounding variables.
-    \item \textbf{Potential for Sampling Bias}: Participants in the pilot phase were volunteers, who may have been more favorably predisposed to new technology, potentially inflating adoption and satisfaction metrics.
-\end{itemize}
-
-\subsection{Technical Limitations}
-
-\begin{itemize}
-    \item \textbf{Legacy System Dependency}: The system remains dependent on a central Oracle database, creating a potential for vendor lock-in and constraining future architectural evolution \cite{lin2018}.
-    \item \textbf{Untested Horizontal Scalability}: While the system architecture is designed for scalability, its capacity for large-scale horizontal scaling in a distributed, multi-server environment has not yet been empirically validated.
-    \item \textbf{Partial HL7 FHIR Conformance}: The system's APIs, while RESTful, are not yet fully conformant with the HL7 FHIR standard, a necessary step for achieving deeper, standards-based interoperability \cite{mandl2020}.
-    \item \textbf{Absence of Predictive Analytics}: The machine learning components for predictive analytics, envisioned in the initial design, were not implemented in this phase of the project \cite{bates2021}.
-\end{itemize}
-
-\section{Implications for Research and Practice}
-
-\subsection{Implications for Clinical Practice}
-This work offers several practical takeaways for healthcare professionals and institutions:
-\begin{itemize}
-    \item It provides an empirical demonstration of how to successfully modernize critical clinical systems within the budget and operational constraints of a public hospital.
-    \item It reinforces that usability is a critical driver of technology adoption and a key determinant of patient safety outcomes \cite{mcgreevey2020}.
-    \item It validates the use of agile development practices in the regulated healthcare domain, challenging the traditional waterfall models often used in this sector \cite{vaghasiya2021}.
-    \item It underscores that continuous user training and support are not ancillary activities but core components of any successful health IT implementation \cite{kvarnstrom2023}.
-\end{itemize}
-
-\subsection{Implications for Hospital Management}
-For healthcare administrators and decision-makers, this study provides actionable insights:
-\begin{itemize}
-    \item It presents a clear, data-driven business case (ROI) for investing in the technological modernization of core clinical workflows \cite{rozenblum2020}.
-    \item It highlights the strategic importance of executive sponsorship and formal change management methodologies in navigating the complexities of digital transformation \cite{may2013}.
-    \item It demonstrates the value of establishing and continuously monitoring KPIs to objectively measure the impact of technological investments \cite{donabedian1988}.
-\end{itemize} 
+Despite these limitations, this work has significant implications. For clinical practice, it provides a proven model for modernizing critical systems within the constraints of a public hospital and validates the use of agile practices in this domain \cite{vaghasiya2021}. For hospital management, it presents a clear, data-driven business case for investing in technological modernization and highlights the strategic importance of formal change management \cite{donabedian1988}. 
