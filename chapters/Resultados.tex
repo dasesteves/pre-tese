@@ -1,10 +1,11 @@
-\chapter{Results}
+\chapter{Expected Results and Evaluation Plan}
+\label{chap:ExpectedResults}
 
-This chapter presents the principal outcomes of the research, detailing the architecture of the developed system, its performance and quality metrics, and the results from its six-month pilot evaluation in a clinical setting. The findings are presented as a narrative, supported by quantitative data and visual artifacts, to illustrate the system's impact.
+This chapter outlines the anticipated outcomes of the research and the comprehensive plan designed to evaluate the developed system. The expected results are presented across several dimensions: the system's technical architecture, its performance and quality benchmarks, its clinical impact, user acceptance, and financial viability. The evaluation plan details the methodology, metrics, and instruments that will be used to measure the success of the implementation in a live hospital environment.
 
-\section{Final System Architecture and Implementation}
+\section{Proposed System Architecture}
 
-The system's design was guided by the principles of modularity, scalability, and maintainability, resulting in a layered microservices architecture. This architectural choice, illustrated in Figure~\ref{fig:architecture}, was critical for managing the complexity of the hospital environment and ensuring a clear separation of concerns between different functional domains.
+The system's design will be guided by the principles of modularity, scalability, and maintainability, culminating in a layered microservices architecture. This architectural choice, illustrated in Figure~\ref{fig:architecture}, is considered critical for managing the complexity of the hospital environment and ensuring a clear separation of concerns. This approach will facilitate parallel development, independent deployment of services, and greater resilience compared to monolithic designs \cite{newman2015}.
 
 \begin{figure}[htbp]
     \centering
@@ -13,21 +14,21 @@ The system's design was guided by the principles of modularity, scalability, and
     \label{fig:architecture}
 \end{figure}
 
-The architecture is composed of five distinct layers. The \textit{Presentation Layer}, built with React and Next.js, provides a responsive and intuitive user interface accessible across various devices. This communicates with the \textit{Application Layer}, a Node.js server using the Express framework, which orchestrates API requests and manages user sessions. The core clinical intelligence resides in the \textit{Business Logic Layer}, where rules for medication validation and workflow management are encapsulated. Data persistence is handled by the \textit{Data Layer}, an optimized Oracle 11g database, while the \textit{Integration Layer} provides a secure RESTful API for seamless communication with legacy and external hospital systems.
+The proposed architecture will be composed of five distinct layers. The \textit{Presentation Layer}, built with React and Next.js, will provide a responsive and intuitive user interface. It will communicate with the \textit{Application Layer} (Node.js/Express), which will orchestrate API requests. The core clinical intelligence will reside in the \textit{Business Logic Layer}. Data persistence will be handled by the \textit{Data Layer}, using an optimized Oracle 11g database, while the \textit{Integration Layer} will provide a secure RESTful API for communication with other hospital systems.
 
-Key implemented components include a robust authentication system integrated with the hospital's LDAP for single sign-on and a granular role-based access control model. The e-prescription module features real-time clinical decision support, validating prescriptions against a knowledge base for potential interactions and allergies, a feature known to significantly reduce prescribing errors \cite{bates2014}. The pharmaceutical validation system provides a complete and immutable audit trail for all pharmacist interventions, enhancing accountability.
+Key components to be implemented include a robust authentication system integrated with the hospital's LDAP for Single Sign-On (SSO) and a granular role-based access control model. The e-prescription module will feature real-time clinical decision support, aiming to significantly reduce prescribing errors by validating prescriptions against a knowledge base for potential drug-drug interactions (DDIs) and allergies, a strategy proven effective in multiple studies \cite{bates2014}. The pharmaceutical validation system will be designed to provide a complete and immutable audit trail, enhancing accountability.
 
-\section{System Performance and Quality Assurance}
+\section{Performance and Quality Benchmarks}
 
-Rigorous performance optimization and quality assurance were central to the development methodology. Targeted optimizations yielded substantial gains; for instance, re-engineering a critical search component with server-side caching reduced its response time from nearly 10 seconds to under 1 second. Strategic API caching similarly reduced the average response time to approximately 200ms for most read operations, a critical threshold for maintaining user engagement in clinical settings \cite{nielsen2012}.
+Rigorous performance and quality assurance will be central to the development methodology. It is expected that targeted optimizations will yield substantial performance gains. For instance, a key objective is to reduce the response time of critical search components to under one second through techniques like server-side caching. The goal for average API response time for most read operations is approximately 200ms, a critical threshold for maintaining user engagement in fast-paced clinical settings \cite{nielsen2012}.
 
-Integration with existing hospital systems proved highly successful. Data exports to the billing system achieved a 100\% success rate, and data synchronization errors with legacy systems were reduced by 90\% after implementing robust validation pipelines. Furthermore, a disciplined refactoring effort increased automated test coverage by 45 percentage points and ensured the frontend achieved full compliance with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA, making the system accessible to all users.
+A primary technical objective is to achieve seamless integration with existing hospital systems. The target is a 100\% success rate for data exports to the billing system and a reduction of over 90\% in data synchronization errors with legacy systems. This will be achieved by implementing robust validation and transformation pipelines. Furthermore, a disciplined refactoring effort will aim to increase automated test coverage to over 80\% and ensure the frontend achieves full compliance with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.
 
-\section{Pilot Evaluation: A Quantitative Analysis}
+\section{Evaluation Plan and Expected Clinical Impact}
 
-The system underwent a six-month pilot evaluation in a live clinical environment, providing a rich dataset to assess its real-world impact. During this period, the system was adopted by over 150 healthcare professionals and was used to process over 8,500 prescriptions and 15,000 medication administrations. The platform demonstrated high reliability, maintaining 99.95\% uptime and successfully handling peak loads of over 500 concurrent users \cite{nkenyereye2016}.
+The system will undergo a six-month pilot evaluation in a live clinical environment at SCMVV to assess its real-world impact. During this period, it is anticipated that the system will be adopted by over 150 healthcare professionals and used to process thousands of prescriptions and medication administrations. The platform's reliability will be a key performance indicator (KPI), with a target of 99.95\% uptime, even under peak loads \cite{nkenyereye2016}.
 
-The impact on patient safety was transformative. As illustrated in Figure~\ref{fig:error-reduction}, the system achieved a 73% reduction in prescribing errors and an 85% reduction in validation errors. This outcome is consistent with, and in some cases exceeds, the benchmarks reported in large-scale studies on the effects of electronic medication management systems \cite{radley2013, bates2014}. The introduction of end-to-end traceability for all medications also led to a 90\% reduction in the time required to identify the source of any medication-related issue, significantly improving the hospital's incident analysis capabilities.
+The most significant expected outcome is a transformative impact on patient safety. As illustrated by the goals in Figure~\ref{fig:error-reduction}, the project aims for a reduction of over 70\% in prescribing errors and over 85\% in validation errors. These targets are ambitious but consistent with benchmarks reported in large-scale studies on the effects of similar systems \cite{radley2013, bates2014}. The introduction of end-to-end traceability is expected to reduce the time required to investigate medication-related incidents by 90\%.
 
 \begin{figure}[htbp]
     \centering
@@ -36,13 +37,13 @@ The impact on patient safety was transformative. As illustrated in Figure~\ref{f
     \label{fig:error-reduction}
 \end{figure}
 
-Operational efficiency also saw significant gains. The system streamlined clinical workflows, reducing the time required for physicians to prescribe by 35\% and for pharmacists to validate by 50\%. This enhanced efficiency translated into improved interdisciplinary communication, with an 80\% reduction in clarification requests from the pharmacy to prescribers, freeing up valuable clinical time \cite{austin2018}.
+Significant gains in operational efficiency are also anticipated. The system is being designed to streamline clinical workflows, with the goal of reducing the time required for physicians to prescribe by at least 30\% and for pharmacists to validate by 40\%. This enhanced efficiency is expected to improve interdisciplinary communication, projecting an 80\% reduction in clarification requests from the pharmacy, thereby freeing up valuable clinical time for patient care \cite{austin2018}.
 
-\section{User Acceptance and Satisfaction}
+\section{User Acceptance Evaluation}
 
-User acceptance of the new system was exceptionally high, a critical factor for the success of any sociotechnical intervention. The system achieved a System Usability Scale (SUS) score of 78, which falls into the "Good" to "Excellent" range and is significantly above the average for healthcare IT systems \cite{lewis2018}. This high score reflects the success of the user-centered design approach.
+High user acceptance is critical for the success of this sociotechnical intervention. The evaluation of user acceptance will be conducted using the System Usability Scale (SUS), a standardized questionnaire. The target is to achieve a SUS score of 75 or higher, which would place the system in the "Good" to "Excellent" range and well above the average for healthcare IT systems \cite{lewis2018}. Achieving this score would validate the user-centered design approach.
 
-As detailed in Figure~\ref{fig:user-satisfaction}, qualitative feedback was overwhelmingly positive across all professional groups. Physicians reported increased confidence, pharmacists highlighted safer workflows, and nurses valued the clarity of administration tasks. Notably, the required training time for new users was reduced by 65\% compared to the legacy system, indicating a highly intuitive user interface.
+Qualitative feedback will also be systematically collected through semi-structured interviews and focus groups with physicians, pharmacists, and nurses. As detailed in the evaluation plan (Figure~\ref{fig:user-satisfaction}), this feedback will be analyzed to assess confidence in the system, perceived safety improvements, and the clarity of workflows. A further metric will be the training time required for new users, with a goal of reducing it by over 60\% compared to the legacy system.
 
 \begin{figure}[htbp]
     \centering
@@ -51,9 +52,9 @@ As detailed in Figure~\ref{fig:user-satisfaction}, qualitative feedback was over
     \label{fig:user-satisfaction}
 \end{figure}
 
-\section{Financial Impact and Future Viability}
+\section{Expected Financial Impact and Future Viability}
 
-The financial analysis, summarized in Figure~\ref{fig:roi-analysis}, demonstrates a strong return on investment. The projected payback period of approximately 8 months is considerably faster than the industry average for similar health IT projects, providing a compelling economic justification for the intervention \cite{adler2021}. This robust financial case, coupled with the system's scalability and the strategic roadmap presented in Figure~\ref{fig:future-roadmap}, ensures its long-term viability and potential for future expansion.
+A cost-benefit analysis will be conducted as part of the evaluation to determine the financial impact. Based on the expected efficiency gains and reduction in costs associated with medication errors, the analysis presented in Figure~\ref{fig:roi-analysis} projects a strong return on investment (ROI). The projected payback period is approximately 8 months, a figure that provides a compelling economic justification for the intervention when compared to industry averages \cite{adler2021}. This robust financial case, coupled with the system's planned scalability and the strategic roadmap (Figure~\ref{fig:future-roadmap}), is intended to ensure its long-term viability and potential for future expansion.
 
 \begin{figure}[htbp]
     \centering
@@ -67,4 +68,26 @@ The financial analysis, summarized in Figure~\ref{fig:roi-analysis}, demonstrate
     \includegraphics[width=0.95\textwidth]{images/generated/future_roadmap.png}
     \caption{18-month future development roadmap, including AI/ML features, FHIR integration, mobile application development, and regional expansion.}
     \label{fig:future-roadmap}
-\end{figure} 
+\end{figure}
+
+\subsection{Key Performance Indicators and Evaluation Scenarios}
+
+To anchor the evaluation in the concrete operational realities of SCMVV, the pilot study will focus on a set of specific Key Performance Indicators (KPIs) derived from current workflow challenges. The problem of fragmented information systems is a well-documented national challenge in the Portuguese NHS, often described as a "Healthcare Archipelago" where data remains siloed within different institutions and levels of care \cite{goiana2024portuguese, nunes2021articulacao}. This project directly addresses this issue by creating a unified platform. The assessment will be both quantitative and qualitative, targeting measurable improvements in patient safety, operational efficiency, and system integration.
+
+\subsubsection{Patient Safety KPIs}
+\begin{itemize}
+    \item \textbf{Reduction of Medication Errors due to Data Inconsistency:} A primary goal is to address errors originating from outdated drug information on frontend clients. We will measure the incidence of prescription queries and validation failures specifically linked to mismatched drug codes or the use of non-standardized supplements. The target is a >90\% reduction in this class of error.
+    \item \textbf{Elimination of Manual External Lookups:} The current reliance on external websites (e.g., Simposium) by pharmacists for drug interaction checks is a key symptom of system deficiency. A binary success metric will be the complete elimination of this workaround. Success will be defined as <5\% of pharmacists reporting the need for external lookups during their validation workflow, measured via direct observation and surveys.
+\end{itemize}
+
+\subsubsection{Operational Efficiency KPIs}
+\begin{itemize}
+    \item \textbf{Automation of the Nursing Medication Administration Record (MAR):} The most significant workflow transformation is expected in nursing. Currently, nurses perform manual, redundant data entry across multiple systems (SNS, SClínico, Sonho, CEGID). The project will introduce a unified interface for this task. The primary KPI will be the time spent on administrative tasks per medication round. Based on preliminary analysis, we project a reduction of 5-10 minutes per round, per nurse, freeing up significant time for direct patient care. A secondary metric will be the rate of data transcription errors, expected to approach zero.
+    \item \textbf{Streamlining Surgical Prescriptions:} The integration of a prescription module within the surgical workflow will be evaluated. The KPI will be the percentage of post-operative medications prescribed directly through the system, aiming for >95\% adoption by the surgical team within the pilot period.
+\end{itemize}
+
+\subsubsection{System Integration and Interoperability KPIs}
+\begin{itemize}
+    \item \textbf{Unified Patient Context View:} The system's ability to act as a central hub will be measured by its capacity to present a unified view of the patient, pulling data in real-time from disparate sources. This includes inpatient status and location from \textbf{Sonho}, historical clinical data from \textbf{SClínico}, and insurance details from billing systems like \textbf{ADSE}, a challenge common in the national context \cite{pinto2016identification}. Success will be measured via user satisfaction surveys focusing on the perception of having a "single source of truth".
+    \item \textbf{Real-time Stock and Billing Synchronization:} The system's outbound integration will be critically evaluated. We will measure the success rate and latency of real-time stock level updates to the \textbf{CEGID} logistics system following pharmaceutical validation and administration. The target is a >99.9\% success rate with sub-second latency.
+\end{itemize} 

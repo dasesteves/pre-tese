@@ -1,4 +1,4 @@
-\begin{thebibliography}{61}
+\begin{thebibliography}{64}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -166,6 +166,16 @@ Parvin Ghobadi, Mohammad Gholami, Shirin Hasanvand, Tahereh Toulabi, Nasrolah
 \newblock \emph{BMC Nursing}, 2022.
 \newblock \doi{10.1186/s12912-022-01130-7}.
 
+\bibitem[Goiana-da Silva et~al.(2024)Goiana-da Silva, S{\'a}, Cabral, Guedes,
+  Vasconcelos, Sarmento, Nunes, Moreira, Miraldo, Ashrafian,
+  et~al.]{goiana2024portuguese}
+Francisco Goiana-da Silva, Juliana S{\'a}, Miguel Cabral, Raisa Guedes, Rafael
+  Vasconcelos, Jo{\~a}o Sarmento, Alexandre~Morais Nunes, Rita Moreira, Marisa
+  Miraldo, Hutan Ashrafian, et~al.
+\newblock The portuguese nhs 2024 reform: transformation through vertical
+  integration.
+\newblock \emph{Frontiers in Public Health}, 12:\penalty0 1389057, 2024.
+
 \bibitem[Greenhalgh et~al.(2017)Greenhalgh, Wherton, Papoutsi, Lynch, Hughes,
   A'Court, Hinder, Fahy, Procter, and Shaw]{greenhalgh2017}
 T.~Greenhalgh, J.~Wherton, C.~Papoutsi, J.~Lynch, G.~Hughes, C.~A'Court,
@@ -213,14 +223,6 @@ Shumaila Javaid, Sherali Zeadally, Hamza Fahim, and Bin He.
   for pervasive healthcare delivery: A review.
 \newblock \emph{IEEE Sensors Journal}, 22\penalty0 (5):\penalty0 3860--3877,
   2022.
-
-\bibitem[Jiang(2014)]{jiang2014}
-Xiao~Ming Jiang.
-\newblock Design and implementation of computer equipment management system
-  based on oracle database.
-\newblock \emph{Applied Mechanics and Materials}, 644-650:\penalty0 3157--3159,
-  2014.
-\newblock \doi{10.4028/www.scientific.net/AMM.644-650.3157}.
 
 \bibitem[Kallio et~al.(2020)Kallio, Eskola, Pohjanoksa-Mäntylä, and
   Airaksinen]{kallio2020}
@@ -363,6 +365,12 @@ S.~Newman.
 \newblock \emph{Building Microservices: Designing Fine-Grained Systems}.
 \newblock O'Reilly Media, 2nd edition, 2021.
 
+\bibitem[Newman(2015)]{newman2015}
+Sam Newman.
+\newblock \emph{Building Microservices: Designing Fine-Grained Systems}.
+\newblock O'Reilly Media, 2015.
+\newblock ISBN 978-1491950357.
+
 \bibitem[Nielsen(2012)]{nielsen2012}
 Jakob Nielsen.
 \newblock Usability 101: Introduction to usability.
@@ -383,6 +391,31 @@ Lionel Nkenyereye and Jong-Wook Jang.
   server in remote healthcare monitoring system.
 \newblock \emph{Procedia Computer Science}, 98:\penalty0 382--387,
   2016{\natexlab{b}}.
+
+\bibitem[Nunes and de~Matos(2021)]{nunes2021articulacao}
+Alexandre~Morais Nunes and Andreia~Afonso de~Matos.
+\newblock Articulaç{\~a}o entre a atenç{\~a}o prim{\'a}ria e hospitalar em
+  portugal: desafio para a gest{\~a}o da sa{\'u}de.
+\newblock \emph{Revista de Gest{\~a}o em Sistemas de Sa{\'u}de}, 10\penalty0
+  (1):\penalty0 61--83, 2021.
+
+\bibitem[Pinto et~al.(2016)Pinto, Brito, and
+  Cruz-Correia]{pinto2016identification}
+Eduardo Pinto, Ant{\'o}nio~Carvalho Brito, and Ricardo~Jo{\~a}o Cruz-Correia.
+\newblock Identification and characterization of inter-organizational
+  information flows in the portuguese national health service.
+\newblock \emph{Applied clinical informatics}, 7\penalty0 (04):\penalty0
+  1202--1220, 2016.
+
+\bibitem[Radley et~al.(2013)Radley, Wasserman, Olsho, Shoemaker, Spranca, and
+  Bradshaw]{radley2013}
+D.~C. Radley, M.~R. Wasserman, L.~E. Olsho, S.~J. Shoemaker, M.~D. Spranca, and
+  B.~Bradshaw.
+\newblock Reduction in medication errors in hospitals due to adoption of
+  computerized provider order entry systems.
+\newblock \emph{Journal of the American Medical Informatics Association},
+  20:\penalty0 470--476, 2013.
+\newblock \doi{10.1136/amiajnl-2012-001241}.
 
 \bibitem[Rogers(2003)]{rogers2003}
 E.~M. Rogers.
@@ -430,16 +463,6 @@ Carina Tukukino, Naldy~Parodi López, Staffan Svensson, and Sven Wallerstedt.
   medically justified actions.
 \newblock \emph{European Journal of Clinical Pharmacology}, 2022.
 \newblock \doi{10.1007/s00228-022-03292-4}.
-
-\bibitem[Vaghasiya et~al.(2021)Vaghasiya, Penm, Kuan, Gunja, Liu, Kim, Petrina,
-  and Poon]{vaghasiya2021}
-M.~R. Vaghasiya, J.~Penm, K.~K.~Y. Kuan, N.~Gunja, Y.~Liu, E.~D. Kim,
-  N.~Petrina, and S.~Poon.
-\newblock Implementation of an electronic medication management system in a
-  large tertiary hospital: A case of qualitative inquiry.
-\newblock \emph{BMC Medical Informatics and Decision Making}, 21:\penalty0 226,
-  2021.
-\newblock \doi{10.1186/s12911-021-01584-w}.
 
 \bibitem[Vaghasiya et~al.(2023)Vaghasiya, Poon, Gunja, and Penm]{vaghasiya2023}
 Milan~R. Vaghasiya, Simon~K. Poon, Naren Gunja, and Jonathan Penm.
