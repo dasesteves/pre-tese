@@ -2,30 +2,27 @@
 \contentsline {chapter}{Resumo}{i}{chapter*.1}%
 \contentsline {chapter}{Abstract}{ii}{chapter*.2}%
 \contentsline {chapter}{Acknowledgements}{iii}{chapter*.3}%
-\contentsline {chapter}{Lista de Abreviaturas e Símbolos}{iv}{chapter*.4}%
-\contentsline {chapter}{Índice}{v}{section*.5}%
-\contentsline {chapter}{Lista de Figuras}{vii}{section*.7}%
-\contentsline {chapter}{Lista de Tabelas}{viii}{section*.9}%
+\contentsline {chapter}{List of Abbreviations and Symbols}{iv}{chapter*.4}%
+\contentsline {chapter}{Table of Contents}{v}{section*.5}%
+\contentsline {chapter}{List of Figures}{vii}{section*.7}%
+\contentsline {chapter}{List of Tables}{viii}{section*.9}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Context and Problem Definition}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objectives}{2}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Scientific Objectives}{2}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Technological Objectives}{3}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Dissertation Structure}{3}{section.1.3}%
-\contentsline {chapter}{\numberline {2}State of the Art}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Hospital Medication Management Systems}{5}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Historical Evolution}{5}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Current Commercial Systems}{5}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Challenges of Current Systems}{6}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Medication Safety and Emerging Technologies}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Clinical Decision Support Systems (CDSS)}{7}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Artificial Intelligence in Healthcare}{7}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Other Emerging Technologies}{8}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Implementation Architectures and Technologies}{8}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Architectural Patterns}{8}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Standards and Interoperability}{8}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Gaps and Opportunities}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Conclusion and Positioning}{9}{section.2.5}%
+\contentsline {section}{\numberline {1.2}Objectives and Dissertation Structure}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}State of the Art}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hospital Medication Management Systems}{4}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Historical Evolution}{4}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Current Commercial Systems}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Challenges of Current Systems}{5}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Medication Safety and Emerging Technologies}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Clinical Decision Support Systems (CDSS)}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Artificial Intelligence in Healthcare}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Other Emerging Technologies}{7}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Implementation Architectures and Technologies}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Architectural Patterns}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Standards and Interoperability}{7}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Gaps and Opportunities}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Conclusion and Positioning}{8}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Work Plan}{10}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Methodology}{12}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Research Paradigm and Strategy}{12}{section.4.1}%

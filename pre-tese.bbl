@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{61}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -14,6 +14,14 @@ J.~Adler-Milstein, A.~J. Holmgren, P.~Kralovec, C.~Worzala, T.~Searcy, and
 \newblock \emph{Journal of the American Medical Informatics Association},
   28:\penalty0 1120--1124, 2021.
 \newblock \doi{10.1093/jamia/ocab035}.
+
+\bibitem[Ash et~al.(2004)Ash, Berg, and Coiera]{ash2004}
+J.~S. Ash, M.~Berg, and E.~Coiera.
+\newblock Some unintended consequences of information technology in health
+  care: the nature of patient care information system-related errors.
+\newblock \emph{Journal of the American Medical Informatics Association},
+  11\penalty0 (2):\penalty0 104--112, 2004.
+\newblock \doi{10.1197/jamia.M1471}.
 
 \bibitem[Austin et~al.(2018)Austin, Smith, and Tariq]{austin2018}
 J.~A. Austin, I.~R. Smith, and A.~Tariq.
