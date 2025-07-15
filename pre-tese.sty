@@ -135,21 +135,24 @@
     urlcolor = blueUM
 }
 
-%-- Title format - melhorar formatação dos títulos
+%-- Title format - espaçamentos compactados
 \titleformat{\chapter}[display]
   {\relax}
   {\Large\bfseries\chaptername~\thechapter}
-  {2ex}
-  {\LARGE\vspace{1ex}\bfseries}
-  [\vspace{1ex}]
+  {0.5ex}
+  {\LARGE\bfseries}
+  [\vspace{0.5ex}]
+
+%-- Espaçamento dos capítulos - reduzir espaço antes dos títulos
+\titlespacing*{\chapter}{0pt}{10pt}{15pt}
 
 \titleformat{\section}
   {\Large\bfseries}{\thesection}{1em}{}
-  [\vspace{0.5ex}]
+  [\vspace{0.3ex}]
   
 \titleformat{\subsection}
   {\large\bfseries}{\thesubsection}{1em}{}
-  [\vspace{0.3ex}]
+  [\vspace{0.2ex}]
   
 %-- Footnote format
 \ifdefined\deffootnote
