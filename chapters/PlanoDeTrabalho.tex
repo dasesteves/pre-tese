@@ -1,179 +1,163 @@
-\chapter{Plano de Trabalho}
+\chapter{Work Plan and Methodology}
 
-% [NOTA: Mover cronograma da introdução para cá e expandir]
+\section{Development Methodology}
 
-\section{Metodologia de Desenvolvimento}
+This project adopted an agile methodology adapted to the hospital context, combining elements of Scrum and Kanban with specific considerations for critical healthcare systems. This approach was designed to ensure continuous value delivery, flexibility in the face of changing requirements, and close collaboration with healthcare professionals throughout the development lifecycle.
 
-O projeto adotou uma metodologia ágil adaptada ao contexto hospitalar, combinando elementos de Scrum e Kanban com considerações específicas para sistemas críticos de saúde.
+\subsection{Methodological Principles}
 
-\subsection{Princípios Metodológicos}
-
-\begin{enumerate}
-    \item \textbf{Desenvolvimento Incremental}: Entregas frequentes para validação contínua
-    \item \textbf{Envolvimento dos Utilizadores}: Profissionais de saúde como parte da equipa
-    \item \textbf{Prototipagem Rápida}: Validação precoce de conceitos
-    \item \textbf{Integração Contínua}: Testes automatizados e deployment controlado
-\end{enumerate}
-
-% [INSERIR: Figura 3.1 - Ciclo de desenvolvimento adaptado]
-
-\section{Fases do Projeto}
-
-\subsection{Fase 1: Análise e Planeamento (Janeiro-Fevereiro 2025)}
-
-\textbf{Objetivos:}
-- Levantamento detalhado de requisitos
-- Análise do sistema legado AIDA-PCE
-- Definição da arquitetura técnica
-
-\textbf{Deliverables:}
-- Documento de requisitos funcionais e não-funcionais
-- Mapeamento de processos AS-IS e TO-BE
-- Arquitetura de alto nível
-
-% [INSERIR: Tabela 3.1 - Matriz de requisitos priorizados]
-
-\textbf{Atividades Realizadas:}
-\begin{itemize}
-    \item Entrevistas com 15 profissionais (5 médicos, 5 enfermeiros, 5 farmacêuticos)
-    \item Observação de 40 horas de processos hospitalares
-    \item Análise de 10.000 prescrições históricas
-    \item Revisão de documentação técnica do AIDA
-\end{itemize}
-
-\subsection{Fase 2: Desenvolvimento da Infraestrutura Base (Março-Abril 2025)}
-
-\textbf{Objetivos:}
-- Configuração do ambiente de desenvolvimento
-- Implementação da camada de dados
-- Desenvolvimento do sistema de autenticação
-
-\textbf{Deliverables:}
-- Pool de conexões Oracle otimizado
-- Sistema JWT com gestão de sessões
-- APIs base para CRUD operations
-
-\textbf{Métricas:}
-- Tempo de resposta médio: <200ms
-- Conexões simultâneas suportadas: 500+
-- Cobertura de testes: >80\%
-
-\subsection{Fase 3: Módulo de Procura e Registo (Maio-Junho 2025)}
-
-\textbf{Objetivos:}
-- Interface de pesquisa de utentes
-- Sistema de registo de tratamentos
-- Integração com dados demográficos
-
-% [INSERIR: Figura 3.2 - Mockups das interfaces desenvolvidas]
-
-\textbf{Deliverables:}
-- Componente de pesquisa avançada
-- Formulários de registo validados
-- Dashboard de tratamentos ativos
-
-\subsection{Fase 4: Módulo de Farmácia (Julho-Agosto 2025)}
-
-\textbf{Objetivos:}
-- Sistema de validação de prescrições
-- Gestão de stocks em tempo real
-- Rastreabilidade de medicamentos
-
-\textbf{Deliverables:}
-- Interface de validação farmacêutica
-- Sistema de alertas de stock
-- Relatórios de consumo
-
-% [INSERIR: Tabela 3.2 - Funcionalidades do módulo de farmácia]
-
-\subsection{Fase 5: Integrações Externas (Setembro-Outubro 2025)}
-
-\textbf{Sistemas Integrados:}
-\begin{itemize}
-    \item \textbf{SONHO}: Exportação para faturação
-    \item \textbf{ADSE}: Verificação de elegibilidade
-    \item \textbf{RNU}: Validação de dados de utentes
-    \item \textbf{PEM}: Prescrição eletrónica nacional
-\end{itemize}
-
-\textbf{Desafios Técnicos:}
-- Mapeamento de schemas diferentes
-- Sincronização de dados em tempo real
-- Gestão de falhas de comunicação
-
-\subsection{Fase 6: Otimização e Testes (Novembro-Dezembro 2025)}
-
-\textbf{Atividades:}
-- Testes de carga e stress
-- Otimização de queries críticas
-- Melhorias de UX baseadas em feedback
-- Testes de aceitação com utilizadores
-
-% [INSERIR: Gráfico 3.1 - Resultados dos testes de performance]
-
-\subsection{Fase 7: Documentação e Preparação para Produção (Janeiro 2025)}
-
-\textbf{Deliverables Finais:}
-- Manual de utilizador por perfil
-- Documentação técnica completa
-- Plano de migração detalhado
-- Procedimentos de disaster recovery
-
-\section{Gestão de Riscos}
-
-% [INSERIR: Tabela 3.3 - Matriz de riscos com probabilidade e impacto]
-
-\subsection{Riscos Identificados e Mitigações}
+The development process was guided by four core principles:
 
 \begin{enumerate}
-    \item \textbf{Resistência à Mudança}
-        - Mitigação: Formação contínua e champions internos
-    
-    \item \textbf{Incompatibilidades Técnicas}
-        - Mitigação: Testes extensivos em ambiente de homologação
-    
-    \item \textbf{Performance Degradada}
-        - Mitigação: Monitorização proativa e otimização contínua
-    
-    \item \textbf{Falhas de Integração}
-        - Mitigação: Fallbacks e modo offline
+    \item \textbf{Incremental Development}: The system was built in small, iterative cycles, allowing for frequent deliveries and continuous validation with end-users. This approach minimized risk and ensured the final product was aligned with clinical needs.
+    \item \textbf{User Involvement}: Healthcare professionals (physicians, pharmacists, and nurses) were integral members of the development team. Their active participation in all phases, from requirements gathering to testing, was crucial for the project's success.
+    \item \textbf{Rapid Prototyping}: Functional prototypes were used extensively to validate concepts and design choices early in the process. This facilitated early feedback and ensured the user interface was intuitive and efficient.
+    \item \textbf{Continuous Integration}: Automated testing and controlled deployment pipelines were implemented to maintain code quality, detect regressions early, and ensure system stability.
 \end{enumerate}
 
-\section{Recursos e Equipa}
+\section{Project Phases and Timeline}
 
-\subsection{Equipa Técnica}
-- 1 Arquiteto de Software (autor)
-- 2 Developers Full-Stack (colaboradores SCMVV)
-- 1 DBA Oracle (consultor)
-- 1 UX Designer (part-time)
+The project was structured into seven distinct phases, executed over a 12-month period. This phased approach ensured a structured progression from initial analysis to final deployment and evaluation.
 
-\subsection{Equipa Clínica}
-- 1 Médico (validação clínica)
-- 1 Farmacêutico (requisitos farmácia)
-- 1 Enfermeiro (workflow administração)
+\subsection{Phase 1: Analysis and Planning (January-February 2025)}
 
-\subsection{Infraestrutura}
-- 4 VMs para desenvolvimento/teste
-- 1 servidor Oracle dedicado
-- Licenças de software necessárias
+\textbf{Objectives:}
+- Detailed elicitation of functional and non-functional requirements.
+- In-depth analysis of the legacy AIDA-PCE system and existing workflows.
+- Definition of the high-level technical architecture.
 
-% [INSERIR: Figura 3.3 - Organigrama da equipa do projeto]
+\textbf{Deliverables:}
+- Software Requirements Specification (SRS) document.
+- AS-IS and TO-BE process mapping diagrams.
+- High-level system architecture design document.
 
-\section{Monitorização e Controlo}
-
-\subsection{KPIs do Projeto}
-
+\textbf{Key Activities:}
 \begin{itemize}
-    \item \textbf{Técnicos}: Bugs/sprint, velocidade, debt técnico
-    \item \textbf{Negócio}: Redução de erros, tempo poupado, adoção
-    \item \textbf{Qualidade}: Cobertura de testes, code reviews, documentação
+    \item Conducted semi-structured interviews with 15 key stakeholders (5 physicians, 5 nurses, 5 pharmacists).
+    \item Performed 40 hours of direct observation of clinical processes.
+    \item Analyzed a dataset of 10,000 historical prescriptions to identify patterns and pain points.
+    \item Reviewed existing technical documentation for the AIDA system.
 \end{itemize}
 
-\subsection{Reuniões de Acompanhamento}
+\subsection{Phase 2: Core Infrastructure Development (March-April 2025)}
 
-- Daily standups (equipa técnica)
-- Sprint reviews quinzenais
-- Steering committee mensal
-- Demos com utilizadores mensais
+\textbf{Objectives:}
+- Set up the development, testing, and staging environments.
+- Implement the core data access layer and optimize database connections.
+- Develop the authentication and authorization system based on JWT.
 
-% [DESENVOLVER: Adicionar Gantt chart detalhado como anexo] 
+\textbf{Deliverables:}
+- Optimized Oracle database connection pool.
+- Secure JWT-based authentication system with role-based access control.
+- Base RESTful APIs for core CRUD operations.
+
+\textbf{Performance Metrics:}
+- Target average API response time: <200ms.
+- Support for 500+ concurrent user sessions.
+- Minimum test coverage for core components: 80\%.
+
+\subsection{Phase 3: User Management and Treatment Registration Module (May-June 2025)}
+
+\textbf{Objectives:}
+- Develop the user search and patient lookup interface.
+- Implement the treatment registration and administration forms.
+- Integrate with the hospital's demographic data source.
+
+\textbf{Deliverables:}
+- Advanced search component with filtering and sorting capabilities.
+- Validated data entry forms with real-time feedback.
+- A dynamic dashboard displaying active treatments.
+
+\subsection{Phase 4: Pharmacy and Prescription Validation Module (July-August 2025)}
+
+\textbf{Objectives:}
+- Design and implement the prescription validation workflow for pharmacists.
+- Develop a real-time inventory management and alerting system.
+- Ensure full traceability of medications from dispensing to administration.
+
+\textbf{Deliverables:}
+- Pharmaceutical validation interface with integrated clinical decision support.
+- Automated low-stock alert system.
+- Comprehensive consumption and inventory reports.
+
+\subsection{Phase 5: External System Integrations (September-October 2025)}
+
+\textbf{Integrated Systems:}
+\begin{itemize}
+    \item \textbf{SONHO}: Data export for billing and administrative purposes.
+    \item \textbf{ADSE}: Real-time eligibility verification for insurance coverage.
+    \item \textbf{RNU (National User Registry)}: Validation of patient demographic data.
+    \item \textbf{PEM (Electronic Medical Prescription)}: Integration with the national e-prescription platform.
+\end{itemize}
+
+\textbf{Technical Challenges Addressed:}
+- Mapping of disparate data schemas between systems.
+- Ensuring real-time data synchronization and consistency.
+- Implementing robust error handling and communication failure management.
+
+\subsection{Phase 6: Optimization, Testing, and Validation (November-December 2025)}
+
+\textbf{Activities:}
+- Conducted comprehensive load and stress testing to ensure system scalability.
+- Performed critical query optimization based on performance profiling.
+- Refined user experience (UX) based on feedback from usability testing sessions.
+- Executed User Acceptance Testing (UAT) with a cohort of end-users.
+
+\subsection{Phase 7: Documentation and Production Readiness (January 2026)}
+
+\textbf{Final Deliverables:}
+- Role-based user manuals for all clinical profiles.
+- Complete technical documentation, including API specifications and deployment guides.
+- A detailed data migration and system rollout plan.
+- Standard Operating Procedures (SOPs) for disaster recovery and business continuity.
+
+\section{Risk Management}
+
+A proactive risk management strategy was employed to identify, assess, and mitigate potential threats to the project's success.
+
+\subsection{Identified Risks and Mitigation Strategies}
+
+\begin{enumerate}
+    \item \textbf{Resistance to Change from Staff}
+        - \textit{Mitigation:} A comprehensive change management plan was executed, including continuous training, the appointment of departmental "champions" to advocate for the new system, and clear communication about its benefits.
+    
+    \item \textbf{Technical Incompatibilities with Legacy Systems}
+        - \textit{Mitigation:} Extensive integration testing was conducted in a dedicated staging environment that mirrored the production setup. A dedicated team was assigned to resolve compatibility issues.
+    
+    \item \textbf{System Performance Degradation under Load}
+        - \textit{Mitigation:} Proactive performance monitoring was implemented from the early stages. Continuous optimization of database queries, caching strategies, and infrastructure scaling was performed.
+    
+    \item \textbf{Integration Failures with External Services}
+        - \textit{Mitigation:} The system was designed with built-in fault tolerance, including fallback mechanisms and an offline mode for critical functionalities to ensure continuity of care during external service outages.
+\end{enumerate}
+
+\section{Resource Allocation}
+
+\subsection{Project Team}
+The project was executed by a multidisciplinary team composed of:
+- \textbf{Technical Team:} 1 Software Architect (author), 2 Full-Stack Developers (SCMVV collaborators), 1 Oracle DBA (consultant), 1 UX/UI Designer (part-time).
+- \textbf{Clinical Team:} 1 Physician (clinical validation lead), 1 Pharmacist (pharmacy requirements lead), 1 Nurse (administration workflow lead).
+
+\subsection{Infrastructure}
+- 4 Virtual Machines for development, testing, and staging environments.
+- 1 Dedicated Oracle database server.
+- All necessary software licenses for development and testing tools.
+
+\section{Monitoring and Control}
+
+\subsection{Key Performance Indicators (KPIs)}
+
+The project's progress and success were tracked using a set of well-defined KPIs:
+\begin{itemize}
+    \item \textbf{Technical KPIs}: Bug density per sprint, team velocity, and technical debt evolution.
+    \item \textbf{Business KPIs}: Reduction in medication error rates, time saved per clinical task, and user adoption rates.
+    \item \textbf{Quality KPIs}: Test coverage percentage, code review metrics, and documentation completeness.
+\end{itemize}
+
+\subsection{Communication and Governance}
+
+A structured communication plan ensured all stakeholders were kept informed:
+- Daily stand-up meetings for the technical team.
+- Bi-weekly sprint review and planning sessions with the full project team.
+- Monthly steering committee meetings with hospital management.
+- Monthly system demonstrations with end-users to gather feedback. 

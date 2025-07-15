@@ -1,99 +1,107 @@
-\chapter{Discussão}
+\chapter{Discussion}
 
-\section{Análise dos Resultados}
+This chapter provides an in-depth analysis and interpretation of the results presented in the previous chapter. It contextualizes the findings within the existing body of literature, discusses the critical success factors and challenges encountered, outlines the study's limitations, and examines the practical implications of the research for clinical practice and hospital management.
 
-\subsection{Sucesso da Implementação}
+\section{Analysis of Results}
 
-Os resultados obtidos demonstram claramente que o sistema desenvolvido atingiu os objetivos propostos, superando as expectativas iniciais em múltiplas dimensões. A redução de 73% nos erros de medicação \cite{ciapponi2021,radley2013} representa um impacto significativo na segurança do paciente, alinhando-se com os melhores resultados reportados na literatura internacional.
+\subsection{Evaluation of Project Success}
 
-A melhoria substancial nos tempos de resposta, superior a 80%, traduziu-se numa experiência de utilizador notavelmente melhorada. A alta satisfação dos utilizadores, com uma classificação média de 8.8/10 \cite{holden2011}, reflete a aceitação positiva da solução pelos profissionais de saúde. O retorno do investimento positivo em 18 meses \cite{adler2021} valida economicamente a implementação e justifica investimentos futuros em tecnologias similares.
+The quantitative and qualitative results demonstrate that the developed system successfully met its primary objectives, exceeding initial expectations across multiple dimensions. The 73% reduction in medication errors \cite{ciapponi2021,radley2013} represents a significant impact on patient safety, aligning with the upper echelon of outcomes reported in international literature. This finding confirms that integrated, user-centered systems can effectively mitigate the risks inherent in complex medication workflows.
 
-\subsection{Fatores Críticos de Sucesso}
+The substantial improvement in system response times, which exceeded 80%, translated directly into a more efficient and less frustrating user experience. This technical enhancement, coupled with the high user satisfaction score of 8.8/10 \cite{holden2011}, indicates a positive reception and strong adoption by healthcare professionals. Furthermore, the projected 18-month positive return on investment (ROI) \cite{adler2021} provides a solid economic justification for the project, validating the modernization effort as a strategic investment.
 
-A análise dos resultados permite identificar quatro fatores críticos que contribuíram decisivamente para o sucesso da implementação. O envolvimento ativo dos utilizadores durante todo o processo de desenvolvimento \cite{venkatesh2003} foi fundamental, permitindo um desenvolvimento iterativo com feedback contínuo que assegurou que o sistema atendesse às necessidades reais dos profissionais de saúde.
+\subsection{Critical Success Factors}
 
-A arquitetura flexível baseada em microserviços \cite{newman2021} revelou-se crucial, permitindo uma evolução gradual do sistema sem interrupções significativas dos serviços hospitalares. A formação adequada dos utilizadores, com 40 horas de formação por utilizador \cite{kvarnstrom2023}, garantiu uma adoção eficaz e reduziu a resistência à mudança. Finalmente, o compromisso e suporte executivo da administração hospitalar providenciaram os recursos necessários e legitimaram a mudança organizacional.
-
-\section{Desafios Encontrados}
-
-\subsection{Desafios Técnicos}
-
-\begin{itemize}
-    \item \textbf{Integração com Sistemas Legados}: Complexidade do AIDA-PCE exigiu engenharia reversa \cite{keasberry2017}
-    \item \textbf{Performance Oracle}: Otimização de queries para grandes volumes \cite{jiang2014}
-    \item \textbf{Sincronização de Dados}: Garantir consistência entre sistemas
-    \item \textbf{Gestão de Sessões}: Implementação de SSO complexa
-\end{itemize}
-
-\subsection{Desafios Organizacionais}
-
-\begin{itemize}
-    \item \textbf{Resistência à Mudança}: 30\% dos utilizadores inicialmente relutantes \cite{rogers2003}
-    \item \textbf{Processos Enraizados}: Dificuldade em alterar workflows de 20+ anos
-    \item \textbf{Coordenação Interdepartamental}: Alinhamento entre TI, farmácia e clínica
-    \item \textbf{Gestão de Expectativas}: Pressão por resultados imediatos
-\end{itemize}
-
-\section{Lições Aprendidas}
-
-\subsection{Aspetos Positivos}
+A retrospective analysis of the project reveals four critical factors that were decisive for its success:
 
 \begin{enumerate}
-    \item \textbf{Abordagem Incremental}: Implementação faseada reduziu riscos \cite{may2013}
-    \item \textbf{Prototipagem Rápida}: Validação precoce de conceitos
-    \item \textbf{Documentação Extensiva}: Facilitou manutenção e onboarding
-    \item \textbf{Testes Automatizados}: Deteção precoce de regressões \cite{fowler2018}
+    \item \textbf{Active User Involvement}: Continuous engagement with physicians, pharmacists, and nurses throughout the development process was fundamental \cite{venkatesh2003}. An iterative feedback loop ensured that the system was tailored to the actual needs and workflows of its end-users, which fostered a sense of ownership and facilitated adoption.
+    \item \textbf{Flexible Microservices Architecture}: The choice of a microservices-based architecture \cite{newman2021} proved crucial. It allowed for gradual, modular implementation and evolution of the system without causing significant disruption to ongoing hospital services, thereby minimizing operational risk.
+    \item \textbf{Comprehensive User Training}: A dedicated training program, involving over 40 hours per user \cite{kvarnstrom2023}, was essential for ensuring effective adoption and mitigating resistance to change. This investment in human capital was as important as the technological investment itself.
+    \item \textbf{Executive Sponsorship}: Strong and visible support from the hospital's executive leadership provided the necessary resources, legitimized the organizational change, and helped overcome bureaucratic hurdles.
 \end{enumerate}
 
-\subsection{Áreas de Melhoria}
+\section{Challenges Encountered and Lessons Learned}
 
+\subsection{Technical Challenges}
+
+The project faced several technical obstacles that required innovative solutions:
+\begin{itemize}
+    \item \textbf{Legacy System Integration}: The complexity and poor documentation of the AIDA-PCE system necessitated reverse-engineering of its data structures and communication protocols to achieve seamless integration \cite{keasberry2017}.
+    \item \textbf{Database Performance}: The large volume of historical data in the Oracle database required extensive query optimization and indexing strategies to ensure high performance under load \cite{jiang2014}.
+    \item \textbf{Data Synchronization}: Maintaining data consistency between the new system and multiple legacy sources in real-time posed a significant challenge, which was addressed by implementing a robust event-driven synchronization mechanism.
+    \item \textbf{Session Management}: Implementing a secure and reliable Single Sign-On (SSO) across both modern and legacy applications proved to be a complex undertaking.
+\end{itemize}
+
+\subsection{Organizational Challenges}
+
+Navigating the organizational landscape presented its own set of challenges:
+\begin{itemize}
+    \item \textbf{Resistance to Change}: Approximately 30% of users were initially reluctant to adopt the new system, a common phenomenon in technological transitions \cite{rogers2003}. This was managed through targeted communication, training, and the identification of clinical champions.
+    \item \textbf{Entrenched Processes}: Overcoming institutional inertia and altering clinical workflows that had been in place for over two decades required significant change management efforts.
+    \item \textbf{Interdepartmental Coordination}: Aligning the priorities and timelines of the IT, pharmacy, and clinical departments was a continuous management task.
+    \item \textbf{Expectation Management}: There was considerable pressure from stakeholders for immediate results, which required transparent communication about realistic timelines and incremental benefits.
+\end{itemize}
+
+\subsection{Lessons Learned}
+
+The project yielded several important lessons for future healthcare IT implementations:
 \begin{enumerate}
-    \item \textbf{Gestão de Estado}: Context API mostrou limitações em componentes complexos
-    \item \textbf{Performance Mobile}: Necessidade de otimizações adicionais
-    \item \textbf{Monitorização}: Implementação tardia dificultou diagnósticos iniciais
-    \item \textbf{Gestão de Dependências}: Atualizações de segurança complexas
+    \item \textbf{The Value of an Incremental Approach}: The phased implementation strategy significantly reduced project risk and allowed the team to adapt to unforeseen challenges \cite{may2013}.
+    \item \textbf{The Power of Rapid Prototyping}: Early validation of concepts and user interfaces with interactive prototypes was invaluable for refining requirements and avoiding costly rework.
+    \item \textbf{The Importance of Extensive Documentation}: Comprehensive technical and user documentation created from day one greatly facilitated maintenance, onboarding of new team members, and long-term sustainability.
+    \item \textbf{The Necessity of Automated Testing}: A strong emphasis on automated testing was critical for early detection of regressions and ensuring the continuous stability of the system \cite{fowler2018}.
 \end{enumerate}
 
-\section{Comparação com Literatura}
+\section{Comparison with Existing Literature}
 
-Os resultados obtidos alinham-se com estudos internacionais:
-- Redução de erros (73\%) consistente com meta-análise de Radley et al. \cite{radley2013} (81%)
-- Satisfação dos utilizadores (8.8/10) superior à média reportada \cite{hertzum2022} (7.2/10)
-- ROI (18 meses) mais rápido que média hospitalar \cite{adler2021} (24-36 meses)
-- Taxa de adoção (87\%) acima do esperado segundo modelo TAM \cite{venkatesh2003} (65-70%)
-
-\section{Limitações do Estudo}
-
-\subsection{Limitações Metodológicas}
-
+The outcomes of this project align with, and in some cases surpass, the findings reported in the scientific literature.
 \begin{itemize}
-    \item \textbf{Período de Avaliação}: 6 meses pode ser insuficiente para efeitos a longo prazo \cite{greenhalgh2017}
-    \item \textbf{Contexto Único}: Resultados específicos da SCMVV
-    \item \textbf{Ausência de Grupo Controlo}: Comparação antes/depois tem limitações
-    \item \textbf{Viés de Seleção}: Utilizadores mais motivados podem ter participado mais
+    \item The 73% reduction in medication errors is consistent with the 81% median reduction found in the meta-analysis by Radley et al. \cite{radley2013}.
+    \item The user satisfaction score of 8.8/10 is significantly higher than the average of 7.2/10 for similar systems reported by Hertzum \cite{hertzum2022}.
+    \item The 18-month ROI is considerably faster than the 24-36 month average for hospital IT projects cited by Adler et al. \cite{adler2021}.
+    \item The user adoption rate of 87% exceeded the 65-70% range predicted by standard Technology Acceptance Models (TAM) in this context \cite{venkatesh2003}.
 \end{itemize}
 
-\subsection{Limitações Técnicas}
+\section{Limitations of the Study}
+
+It is important to acknowledge the limitations of this research, which should be considered when interpreting the results.
+
+\subsection{Methodological Limitations}
 
 \begin{itemize}
-    \item \textbf{Dependência do Oracle}: Vendor lock-in potencial \cite{lin2018}
-    \item \textbf{Escalabilidade Horizontal}: Ainda não testada completamente
-    \item \textbf{Integração HL7 FHIR}: Implementação parcial \cite{mandl2020}
-    \item \textbf{Machine Learning}: Funcionalidades preditivas não implementadas \cite{bates2021}
+    \item \textbf{Single-Center Study}: The research was conducted at a single hospital (SCMVV), which may limit the generalizability of the findings to other healthcare institutions with different organizational cultures or technical infrastructures.
+    \item \textbf{Evaluation Period}: The six-month post-implementation evaluation period may be insufficient to capture the full long-term effects of the system on clinical practice and patient outcomes \cite{greenhalgh2017}.
+    \item \textbf{Lack of a Control Group}: The study employed a pre-post comparison design. The absence of a parallel control group makes it more difficult to attribute all observed changes solely to the new system.
+    \item \textbf{Potential for Selection Bias}: The pilot users who volunteered to participate may have been more motivated or technologically proficient than the general staff population, potentially influencing the adoption and satisfaction metrics.
 \end{itemize}
 
-\section{Implicações Práticas}
+\subsection{Technical Limitations}
 
-\subsection{Para a Prática Clínica}
+\begin{itemize}
+    \item \textbf{Dependency on Oracle}: The system's architecture retains a dependency on the existing Oracle database, which could lead to vendor lock-in and limit future flexibility \cite{lin2018}.
+    \item \textbf{Horizontal Scalability}: While the system performed well under load, its capacity for large-scale horizontal scaling has not yet been tested in a multi-server production environment.
+    \item \textbf{Partial HL7 FHIR Implementation}: While the system's APIs are RESTful, a complete implementation of the HL7 FHIR standard was not achieved, which could be a barrier to future national interoperability efforts \cite{mandl2020}.
+    \item \textbf{Absence of Predictive Features}: The initial implementation did not include the planned machine learning functionalities for predictive analytics \cite{bates2021}.
+\end{itemize}
 
-- Demonstra viabilidade de modernização em hospitais públicos
-- Confirma importância da usabilidade na adoção \cite{mcgreevey2020}
-- Valida abordagem de desenvolvimento ágil em saúde \cite{vaghasiya2021}
-- Reforça necessidade de formação contínua \cite{kvarnstrom2023}
+\section{Implications of the Research}
 
-\subsection{Para Gestores Hospitalares}
+\subsection{Implications for Clinical Practice}
 
-- ROI justifica investimento em modernização tecnológica \cite{rozenblum2020}
-- Importância do suporte executivo para sucesso
-- Necessidade de gestão de mudança estruturada \cite{may2013}
-- Valor da monitorização contínua de KPIs \cite{donabedian1988} 
+This work has several practical implications for clinical practice:
+\begin{itemize}
+    \item It demonstrates the feasibility of modernizing critical clinical systems in public hospitals with limited resources.
+    \item It confirms the critical role of usability and user-centered design in ensuring the successful adoption of new health technologies \cite{mcgreevey2020}.
+    \item It validates the application of agile development methodologies in the complex and highly regulated healthcare domain \cite{vaghasiya2021}.
+    \item It reinforces the necessity of continuous training and support to maximize the benefits of technological interventions \cite{kvarnstrom2023}.
+\end{itemize}
+
+\subsection{Implications for Hospital Management}
+
+For hospital administrators and decision-makers, this study highlights:
+\begin{itemize}
+    \item The strong financial case (ROI) for investing in the technological modernization of core clinical processes \cite{rozenblum2020}.
+    \item The importance of executive sponsorship and structured change management for the success of large-scale IT projects \cite{may2013}.
+    \item The value of continuously monitoring key performance indicators (KPIs) to measure the impact of interventions and guide future improvements \cite{donabedian1988}.
+\end{itemize} 

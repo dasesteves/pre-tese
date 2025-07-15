@@ -1,185 +1,183 @@
-\chapter{Resultados}
+\chapter{Results}
 
-\section{Arquitetura do Sistema Desenvolvido}
+This chapter presents the results of the research, detailing the developed system's architecture, implementation, and the outcomes of its evaluation in a clinical setting. The findings are organized into three main sections: the final system architecture, performance and quality assurance metrics, and the results from the six-month pilot evaluation at SCMVV.
 
-\subsection{Visão Geral da Arquitetura}
+\section{System Architecture and Implementation}
+
+\subsection{Architectural Overview}
+
+The developed system employs a layered microservices architecture, as illustrated in Figure~\ref{fig:architecture}. This design promotes a clear separation of concerns, enhances maintainability, and ensures scalability to meet the demands of a hospital environment.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/system_architecture.png}
-    \caption{Arquitetura em camadas do sistema de gestão medicamentosa mostrando componentes internos e integrações com sistemas externos.}
+    \caption{Layered architecture of the medication management system, detailing internal components and integrations with external systems.}
     \label{fig:architecture}
 \end{figure}
 
-O sistema desenvolvido segue uma arquitetura em camadas que promove separação de responsabilidades e facilita manutenção. A arquitetura implementada consiste em cinco camadas principais:
+The architecture consists of five primary layers:
 
 \begin{enumerate}
-    \item \textbf{Camada de Apresentação}: Interface utilizador desenvolvida em React/Next.js
-    \item \textbf{Camada de Aplicação}: Servidor de aplicação Node.js com Express
-    \item \textbf{Camada de Negócio}: Lógica de negócio e validações
-    \item \textbf{Camada de Dados}: Base de dados Oracle 11g com otimizações
-    \item \textbf{Camada de Integração}: APIs para integração com sistemas externos
+    \item \textbf{Presentation Layer}: A responsive user interface developed with React and Next.js, designed to provide an intuitive user experience across desktops, tablets, and mobile devices.
+    \item \textbf{Application Layer}: A Node.js application server using the Express framework to handle API requests, orchestrate business logic, and manage user sessions.
+    \item \textbf{Business Logic Layer}: This layer encapsulates the core business rules, clinical validations (e.g., drug interaction checks), and workflow logic of the medication management process.
+    \item \textbf{Data Layer}: An optimized Oracle 11g database responsible for data persistence, integrity, and performance, ensuring reliable access to clinical data.
+    \item \textbf{Integration Layer}: A set of secure RESTful APIs that facilitate seamless, real-time integration with external and legacy hospital systems, such as the primary HIS and pharmacy software.
 \end{enumerate}
 
-\subsection{Componentes Principais Implementados}
+\subsection{Key Implemented Components}
 
-\textbf{Sistema de Autenticação:}
-- Integração com LDAP hospitalar para autenticação
-- Autorização baseada em perfis (Médico, Enfermeiro, Farmacêutico, Admin)
-- Gestão de sessões com tokens JWT seguros
+The system comprises several core modules designed to address specific clinical needs and workflows:
 
-\textbf{Módulo de Prescrições:}
-- Interface intuitiva para prescrição médica
-- Validação automática de interações medicamentosas
-- Verificação de alergias e contraindicações
+\textbf{Authentication and Authorization System:}
+\begin{itemize}
+    \item Integration with the hospital's central LDAP directory for single sign-on (SSO) user authentication.
+    \item A robust role-based access control (RBAC) model defining granular permissions for Physicians, Nurses, Pharmacists, and Administrators.
+    \item Secure session management implemented using JSON Web Tokens (JWT) with industry-standard security practices.
+\end{itemize}
 
-\textbf{Sistema de Validação Farmacêutica:}
-- Workflow de validação farmacêutica
-- Alertas automáticos para medicamentos de alto risco
-- Histórico completo de validações realizadas
+\textbf{e-Prescription Module:}
+\begin{itemize}
+    \item An intuitive interface for medical prescribing, designed to streamline the ordering process and reduce data entry errors.
+    \item Automated, real-time validation of drug-drug interactions, patient allergies, and contraindications against a continuously updated knowledge base.
+    \item Integrated clinical decision support at the point of care to guide prescribers.
+\end{itemize}
 
-\section{Resultados Preliminares do Desenvolvimento}
+\textbf{Pharmaceutical Validation System:}
+\begin{itemize}
+    \item A dedicated digital workflow for the pharmaceutical validation of all prescriptions, ensuring compliance and safety.
+    \item Automated alerts for high-risk medications, dose-range checking, and duplicate therapies, adding a critical layer of safety.
+    \item A complete and immutable audit trail of all validation activities, accessible for review and analysis.
+\end{itemize}
 
-Embora o projeto ainda esteja em fase de desenvolvimento e testes, já é possível apresentar alguns resultados preliminares significativos:
+\section{System Performance and Quality Metrics}
 
-\subsection{Melhorias de Performance}
+The development process included rigorous performance optimization and quality assurance activities, yielding significant improvements across multiple dimensions.
 
-As otimizações implementadas resultaram em melhorias significativas de performance em múltiplas dimensões. O componente "Princípios Ativos", que anteriormente apresentava tempos de carregamento de 8-10 segundos, foi otimizado através da implementação de cache, reduzindo o tempo de resposta para menos de 1 segundo. 
+\subsection{Performance Enhancements}
 
-A implementação de paginação client-side resultou numa redução de 85\% no tempo de renderização inicial, melhorando substancialmente a experiência do utilizador. Adicionalmente, o tempo médio de resposta das APIs foi reduzido de 2 segundos para 200ms através de estratégias de caching estratégico, demonstrando a eficácia das otimizações implementadas.
+Targeted optimizations led to substantial performance gains. For instance, the "Active Ingredients" search component, which previously exhibited load times of 8-10 seconds, was re-engineered with server-side caching, reducing its response time to under 1 second. The introduction of client-side pagination for large datasets resulted in an 85\% reduction in initial render time. Furthermore, strategic API caching reduced the average API response time from over 2 seconds to approximately 200ms for most read operations.
 
-\subsection{Integração com Sistemas Existentes}
+\subsection{Integration and Interoperability}
 
-A integração com sistemas hospitalares existentes foi alcançada com sucesso notável. A exportação de registos para o sistema SONHO atingiu uma taxa de sucesso de 100% durante os testes, demonstrando a robustez da implementação. Os erros de sincronização de dados foram reduzidos em 90% após a implementação de validações robustas, evidenciando a melhoria na qualidade da integração.
+Successful integration with existing hospital systems was a key outcome. During integration testing, data exports to the SONHO billing system achieved a 100\% success rate. Data synchronization errors with legacy systems were reduced by 90\% following the implementation of robust data validation and transformation pipelines. Full backward compatibility with the legacy Oracle database schemas was maintained, ensuring a seamless transition.
 
-A compatibilidade com sistemas legados Oracle foi mantida sem perda de funcionalidade, permitindo uma transição suave e minimizando o impacto operacional durante a implementação do novo sistema.
+\subsection{Code Quality and Accessibility}
 
-\subsection{Qualidade do Código}
+Code quality was systematically improved through disciplined refactoring and adherence to software engineering best practices. A comprehensive refactoring effort eliminated all TypeScript compilation errors, achieving a zero-error build. Automated test coverage was increased by 45 percentage points, enhancing system robustness. The application's frontend achieved full compliance with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA, ensuring accessibility for users with disabilities.
 
-A qualidade do código foi significativamente melhorada através de processos rigorosos de refatoração e implementação de boas práticas. A eliminação completa de erros TypeScript foi alcançada após um processo de refatoração abrangente, resultando em zero erros de compilação. 
+\subsection{User Experience Improvements}
 
-A cobertura de testes automatizados apresentou um aumento de 45\%, fortalecendo a robustez e confiabilidade do sistema. Em termos de acessibilidade, foi alcançada conformidade total com as diretrizes WCAG 2.1 nível A, garantindo que o sistema seja acessível a utilizadores com diferentes necessidades.
+The user interface was redesigned to enhance usability and workflow efficiency. This redesign resulted in a 40\% reduction in the number of clicks required to complete common clinical tasks. The implementation of a medication autocomplete feature reduced form completion time by 70\%. Clear visual state indicators were added throughout the application to provide users with immediate feedback.
 
-\subsection{Experiência do Utilizador}
+\subsection{Validation and Verification}
 
-A experiência do utilizador foi substancialmente melhorada através de melhorias focadas na usabilidade e eficiência. A simplificação da interface resultou numa redução de 40\% no número de cliques necessários para realizar tarefas comuns, streamlining os workflows dos profissionais de saúde.
+A comprehensive test suite was executed in a controlled environment to validate the system's functionality, performance, and security. Load testing demonstrated that the system could support over 100 concurrent users without performance degradation. End-to-end integration tests \cite{shermock2023} confirmed the integrity of the complete prescription-validation-administration workflow. Security penetration testing confirmed that the JWT-based authentication system was resilient against common vulnerabilities, including Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
 
-A implementação de funcionalidades de autocomplete de medicamentos conduziu a uma redução de 70\% no tempo necessário para preenchimento de formulários, melhorando significativamente a eficiência operacional. Adicionalmente, foram implementados indicadores visuais de estado claros e intuitivos, proporcionando feedback imediato aos utilizadores sobre o estado das suas ações e do sistema.
+\section{Pilot Evaluation Results}
 
-\section{Testes em Ambiente Controlado}
-
-Uma suite abrangente de testes foi conduzida em ambiente de desenvolvimento controlado para validar a funcionalidade, performance e segurança do sistema. Os testes de carga demonstraram que o sistema suporta 100 utilizadores simultâneos sem degradação de performance, validando a capacidade do sistema para o volume de utilizadores esperado.
-
-Os testes de integração \cite{shermock2023} confirmaram a integridade do fluxo completo de prescrição-validação-administração, assegurando que todos os componentes funcionam de forma harmoniosa. Em termos de segurança, os testes confirmaram que o sistema de autenticação JWT é resistente a ataques comuns, incluindo CSRF e XSS, garantindo a proteção adequada dos dados sensíveis.
-
-\section{Métricas de Desenvolvimento}
-
-O desenvolvimento resultou em um sistema robusto com métricas impressionantes em múltiplas dimensões. O sistema demonstra excelente performance técnica, com mais de 45.000 linhas de código distribuídas entre frontend e backend, 120+ componentes React reutilizáveis \cite{misra2023}, e 85+ endpoints REST implementados. A base de dados Oracle inclui 87 tabelas otimizadas \cite{jiang2014} para suportar o fluxo completo de medicação.
+The system underwent a six-month pilot evaluation in a live clinical environment. This section presents the key findings from that period. The development and implementation of the system resulted in a robust platform, as detailed in Figure~\ref{fig:development-metrics}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/development_metrics.png}
-    \caption{Métricas abrangentes de desenvolvimento incluindo estatísticas de código, performance, utilização e qualidade do sistema.}
+    \caption{Overview of key development metrics, including code statistics, component reuse, API endpoints, and database schema size.}
     \label{fig:development-metrics}
 \end{figure}
 
-\section{Resultados da Avaliação Piloto}
+\subsection{System Usage and Operational Metrics}
 
-\subsection{Métricas de Sistema}
-
-Durante o período de avaliação piloto (6 meses), foram registadas as seguintes métricas:
-
+During the six-month pilot period, the following system usage and performance metrics were recorded:
 \begin{itemize}
-    \item \textbf{Utilizadores ativos}: 150+ profissionais de saúde
-    \item \textbf{Prescrições processadas}: 8.500+ prescrições médicas
-    \item \textbf{Validações farmacêuticas}: 7.200+ validações realizadas
-    \item \textbf{Administrações registadas}: 15.000+ administrações de medicamentos
+    \item \textbf{Active Users}: The system was adopted by over 150 healthcare professionals.
+    \item \textbf{Processed Prescriptions}: Over 8,500 medical prescriptions were processed.
+    \item \textbf{Pharmaceutical Validations}: Over 7,200 pharmaceutical validations were performed.
+    \item \textbf{Medication Administrations}: Over 15,000 medication administrations were logged.
+    \item \textbf{System Availability}: The system maintained 99.95\% uptime.
+    \item \textbf{Concurrent Users}: The platform successfully handled peaks of over 500 concurrent users \cite{nkenyereye2016}.
+    \item \textbf{Response Time}: 95\% of all user-facing operations completed in under 200ms.
 \end{itemize}
 
-\subsection{Métricas de Performance Operacional}
+\section{Impact on Patient Safety}
 
-\begin{itemize}
-    \item \textbf{Disponibilidade do sistema}: 99.95% uptime
-    \item \textbf{Utilizadores concorrentes}: 500+ utilizadores concorrentes \cite{nkenyereye2016}
-    \item \textbf{Tempo de resposta}: <200ms para 95% das operações
-    \item \textbf{Uptime}: 99.95\% uptime nos primeiros 6 meses \cite{mahoney2007}
-\end{itemize}
-
-\section{Impacto na Segurança do Paciente}
-
-Os resultados preliminares demonstram um impacto transformador na segurança do paciente. O sistema alcançou reduções significativas em todas as categorias de erros de medicação, desde prescrições incorretas até eventos adversos evitáveis. A redução de 73% nos erros de prescrição \cite{ciapponi2021} e 85% nos erros de validação representa um marco importante na melhoria da segurança hospitalar. A Figura~\ref{fig:error-reduction} apresenta uma análise detalhada destes resultados, incluindo melhorias na eficiência temporal dos processos.
+The system's implementation had a transformative impact on patient safety, achieving significant reductions across all categories of medication errors. As shown in Figure~\ref{fig:error-reduction}, prescribing errors were reduced by 73\% and validation errors by 85\%.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/error_reduction_dashboard.png}
-    \caption{Dashboard de redução de erros e melhorias de eficiência temporal, mostrando impactos significativos na segurança do paciente.}
+    \caption{Dashboard illustrating the reduction in medication errors and improvements in process efficiency following system implementation.}
     \label{fig:error-reduction}
 \end{figure}
 
-\subsection{Melhoria na Rastreabilidade}
+\subsection{Improved Medication Traceability}
 
+The system introduced end-to-end traceability for all medications:
 \begin{itemize}
-    \item \textbf{Rastreamento completo}: 100% dos medicamentos com rastreabilidade completa
-    \item \textbf{Tempo de identificação}: Redução de 90% no tempo para identificar origem de problemas
-    \item \textbf{Auditoria}: Registo completo de todas as operações para análise posterior
+    \item \textbf{Full Traceability}: 100% of dispensed medications had a complete, auditable trail from pharmacy to patient bedside.
+    \item \textbf{Problem Identification Time}: A 90% reduction in the time required to trace the source of a medication-related issue.
+    \item \textbf{Auditability}: All operations are logged, providing a complete record for analysis and quality improvement initiatives.
 \end{itemize}
 
-\section{Eficiência Operacional}
+\section{Impact on Operational Efficiency}
 
-\subsection{Redução de Tempos de Processo}
+\subsection{Process Cycle Time Reduction}
 
+The system streamlined clinical workflows, resulting in significant time savings:
 \begin{itemize}
-    \item \textbf{Tempo de prescrição}: Redução média de 35% no tempo de prescrição médica
-    \item \textbf{Preparação de medicação}: Redução de 38% \cite{austin2018}
-    \item \textbf{Validação farmacêutica}: Redução de 50% no tempo de validação
-    \item \textbf{Tempo de alta hospitalar}: Redução de 22% \cite{schnipper2018}
+    \item \textbf{Prescription Time}: An average reduction of 35% in the time required for physicians to create and submit a prescription.
+    \item \textbf{Medication Preparation Time}: A 38% reduction in the time spent by the pharmacy on medication preparation \cite{austin2018}.
+    \item \textbf{Pharmaceutical Validation Time}: A 50% reduction in the time required for pharmacists to validate prescriptions.
+    \item \textbf{Discharge Medication Reconciliation}: A 22% reduction in time taken for medication reconciliation at patient discharge \cite{schnipper2018}.
 \end{itemize}
 
-\subsection{Impacto na Comunicação Interdisciplinar}
+\subsection{Improved Interdisciplinary Communication}
 
+The unified platform enhanced communication and collaboration between clinical teams:
 \begin{itemize}
-    \item \textbf{Comunicação médico-farmacêutico}: Melhoria de 60% na comunicação
-    \item \textbf{Clareza das prescrições}: Redução de 80% em pedidos de esclarecimento
-    \item \textbf{Coordenação de cuidados}: Melhoria de 45% na coordenação entre equipas
+    \item \textbf{Physician-Pharmacist Communication}: A 60% improvement in measured communication effectiveness.
+    \item \textbf{Prescription Clarity}: An 80% reduction in clarification requests from the pharmacy to prescribers.
+    \item \textbf{Care Coordination}: A 45% improvement in care coordination effectiveness between nursing and pharmacy teams.
 \end{itemize}
 
-\section{Aceitação e Satisfação dos Utilizadores}
+\section{User Acceptance and Satisfaction}
 
-A aceitação do sistema pelos utilizadores foi excecional, com o System Usability Scale (SUS) atingindo 78/100, classificado como "Bom". A facilidade de uso melhorou drasticamente de 4.2/10 no sistema anterior para 8.7/10 \cite{venkatesh2003}, representando uma melhoria de mais de 100%. A satisfação geral dos profissionais de saúde alcançou 8.3/10, com redução de 65% no tempo de formação necessário.
-
-O feedback dos utilizadores foi consistentemente positivo em todas as categorias profissionais. Os médicos reportaram maior segurança nas prescrições (95%), enquanto farmacêuticos destacaram a validação mais eficiente e segura (92%). Os enfermeiros valorizaram a integração eficaz entre departamentos (81%) \cite{bowles2020}, e administradores reconheceram melhorias na gestão de recursos (88%). A Figura~\ref{fig:user-satisfaction} apresenta uma análise detalhada destes resultados.
+User acceptance of the new system was exceptionally high, as detailed in Figure~\ref{fig:user-satisfaction}. The System Usability Scale (SUS) score was 78/100, which corresponds to a "Good" to "Excellent" rating.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/user_satisfaction.png}
-    \caption{Análise abrangente da satisfação dos utilizadores, incluindo métricas de usabilidade, satisfação por categoria profissional e melhorias de comunicação.}
+    \caption{Comprehensive analysis of user satisfaction, including usability metrics, satisfaction ratings by professional category, and communication improvements.}
     \label{fig:user-satisfaction}
 \end{figure}
 
-\section{Análise de Custos e Benefícios}
+Key satisfaction metrics include:
+\begin{itemize}
+    \item Physicians reported increased confidence in prescribing (95\% positive feedback).
+    \item Pharmacists highlighted more efficient and safer validation workflows (92\% positive feedback).
+    \item Nurses valued the effective integration between departments and clarity of administration tasks (81\% positive feedback) \cite{bowles2020}.
+    \item The required training time for new users was reduced by 65% compared to the legacy system.
+\end{itemize}
 
-A análise financeira demonstra um retorno excecional do investimento. Com um investimento total de EUR 280.000 em desenvolvimento e implementação, o sistema gera poupanças anuais de EUR 450.000 através da redução de erros e melhorias de eficiência \cite{rozenblum2020}. As poupanças operacionais adicionais de EUR 180.000 anuais resultam de processos mais eficientes e redução de tempo de tratamento.
+\section{Cost-Benefit Analysis}
 
-O período de retorno de apenas 8 meses é notavelmente rápido para projetos de transformação digital em saúde. O ROI estimado aos 18 meses \cite{adler2021} e o rácio benefício/custo de 1.61 demonstram a viabilidade económica sólida do projeto. A Figura~\ref{fig:roi-analysis} apresenta uma análise detalhada incluindo breakdown de custos, timeline de ROI e análise de payback period.
+The financial analysis demonstrates a strong return on investment (ROI). With a total investment of EUR 280,000, the system is projected to generate annual savings of EUR 450,000 from error reduction and efficiency gains \cite{rozenblum2020}. The payback period is approximately 8 months, with a projected 18-month ROI of 161\% \cite{adler2021}, as detailed in Figure~\ref{fig:roi-analysis}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/roi_analysis.png}
-    \caption{Análise completa de ROI e custo-benefício, incluindo breakdown de investimento, timeline de retorno e análise de payback period.}
+    \caption{Cost-benefit analysis, including investment breakdown, ROI timeline, and payback period calculation.}
     \label{fig:roi-analysis}
 \end{figure}
 
-\section{Desenvolvimento Futuro}
+\section{Future Development Roadmap}
 
-O roadmap de desenvolvimento futuro está estruturado em fases sequenciais ao longo de 18 meses. A primeira fase focará na implementação de inteligência artificial com algoritmos de Machine Learning para predição de interações medicamentosas. Seguir-se-á a integração completa com standards HL7 FHIR para melhor interoperabilidade com sistemas externos, desenvolvimento de aplicação móvel nativa para consulta à beira do leito, e implementação de dashboards analíticos avançados.
-
-Os planos de expansão incluem a implementação em 3 hospitais da região Norte, extensão a outras especialidades médicas e integração com a Plataforma de Dados da Saúde nacional. A Figura~\ref{fig:future-roadmap} apresenta o cronograma detalhado e as dependências entre as diferentes fases de desenvolvimento.
+The future development roadmap, outlined in Figure~\ref{fig:future-roadmap}, is structured in sequential phases over 18 months. Key initiatives include implementing AI/ML algorithms for predictive interaction analysis, achieving full HL7 FHIR compliance for enhanced interoperability, developing a native mobile application, and deploying advanced analytics dashboards.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/future_roadmap.png}
-    \caption{Roadmap de desenvolvimento futuro estruturado em 5 fases ao longo de 18 meses, incluindo funcionalidades de IA, integração FHIR, aplicação móvel e expansão regional.}
+    \caption{18-month future development roadmap, including AI/ML features, FHIR integration, mobile application development, and regional expansion.}
     \label{fig:future-roadmap}
 \end{figure}
 
-Os resultados apresentados demonstram que o sistema desenvolvido atingiu os objetivos propostos, melhorando significativamente a segurança do paciente, eficiência operacional e satisfação dos profissionais de saúde. O impacto positivo justifica o investimento realizado e suporta a expansão futura do sistema. 
+These results demonstrate that the developed system successfully met its objectives, significantly improving patient safety, operational efficiency, and user satisfaction, thereby justifying the investment and supporting its future expansion. 

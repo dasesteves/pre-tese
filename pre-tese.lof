@@ -1,4 +1,4 @@
-\babel@toc {portuguese}{}\relax 
+\babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces Conceptual diagram of the problem space, illustrating the fragmented communication flow and resulting information silos that contribute to medication errors and operational inefficiencies.}}{2}{figure.caption.11}%
 \addvspace {10\p@ }
@@ -7,14 +7,14 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Comparative analysis of hospital medication management systems including legacy and modern solutions.}}{9}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5}{\ignorespaces Phases of the research and development methodology for the medication management system.}}{16}{figure.caption.15}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Gantt chart illustrating the project's execution timeline, including key phases and milestones.}}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Phases of the research and development methodology for the medication management system.}}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Gantt chart illustrating the project's execution timeline, including key phases and milestones.}}{20}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7}{\ignorespaces Arquitetura em camadas do sistema de gestão medicamentosa mostrando componentes internos e integrações com sistemas externos.}}{20}{figure.caption.17}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Métricas abrangentes de desenvolvimento incluindo estatísticas de código, performance, utilização e qualidade do sistema.}}{23}{figure.caption.18}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Dashboard de redução de erros e melhorias de eficiência temporal, mostrando impactos significativos na segurança do paciente.}}{24}{figure.caption.19}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Análise abrangente da satisfação dos utilizadores, incluindo métricas de usabilidade, satisfação por categoria profissional e melhorias de comunicação.}}{26}{figure.caption.20}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Análise completa de ROI e custo-benefício, incluindo breakdown de investimento, timeline de retorno e análise de payback period.}}{27}{figure.caption.21}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Roadmap de desenvolvimento futuro estruturado em 5 fases ao longo de 18 meses, incluindo funcionalidades de IA, integração FHIR, aplicação móvel e expansão regional.}}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Layered architecture of the medication management system, detailing internal components and integrations with external systems.}}{22}{figure.caption.17}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Overview of key development metrics, including code statistics, component reuse, API endpoints, and database schema size.}}{25}{figure.caption.18}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Dashboard illustrating the reduction in medication errors and improvements in process efficiency following system implementation.}}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Comprehensive analysis of user satisfaction, including usability metrics, satisfaction ratings by professional category, and communication improvements.}}{28}{figure.caption.20}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Cost-benefit analysis, including investment breakdown, ROI timeline, and payback period calculation.}}{29}{figure.caption.21}%
+\contentsline {figure}{\numberline {12}{\ignorespaces 18-month future development roadmap, including AI/ML features, FHIR integration, mobile application development, and regional expansion.}}{30}{figure.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

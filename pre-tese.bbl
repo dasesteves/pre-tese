@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -274,16 +274,6 @@ Jos{\'e} Machado, Carla Rodrigues, Regina Sousa, and Luis~Mendes Gomes.
   processing approach.
 \newblock \emph{Expert Systems}, page e13303, 2023.
 
-\bibitem[Mahoney et~al.(2007)Mahoney, Berard-Collins, Coleman, Amaral, and
-  Cotter]{mahoney2007}
-C.~D. Mahoney, C.~M. Berard-Collins, R.~Coleman, J.~F. Amaral, and C.~M.
-  Cotter.
-\newblock Effects of an integrated clinical information system on medication
-  safety in a multi-hospital setting.
-\newblock \emph{American Journal of Health-System Pharmacy}, 64\penalty0
-  (18):\penalty0 1969--1977, 2007.
-\newblock \doi{10.2146/ajhp060617}.
-
 \bibitem[Mandl et~al.(2020)Mandl, Gottlieb, and Ellis]{mandl2020}
 K.~D. Mandl, D.~Gottlieb, and A.~M. Ellis.
 \newblock Transforming healthcare with fhir: A decade of change.
@@ -363,21 +353,6 @@ Lionel Nkenyereye and Jong-Wook Jang.
   server in remote healthcare monitoring system.
 \newblock \emph{Procedia Computer Science}, 98:\penalty0 382--387,
   2016{\natexlab{b}}.
-
-\bibitem[Radley et~al.(2013)Radley, Wasserman, Olsho, Shoemaker, Spranca, and
-  Bradshaw]{radley2013}
-D.~C. Radley, M.~R. Wasserman, L.~E. Olsho, S.~J. Shoemaker, M.~D. Spranca, and
-  B.~Bradshaw.
-\newblock Reduction in medication errors in hospitals due to adoption of
-  computerized provider order entry systems.
-\newblock \emph{Journal of the American Medical Informatics Association},
-  20:\penalty0 470--476, 2013.
-\newblock \doi{10.1136/amiajnl-2012-001241}.
-
-\bibitem[Rogers(2003)]{rogers2003}
-E.~M. Rogers.
-\newblock \emph{Diffusion of Innovations}.
-\newblock Free Press, 5th edition, 2003.
 
 \bibitem[Rozenblum et~al.(2020)Rozenblum, Rodriguez-Monguio, Volk, Forsythe,
   Myers, McGurrin, Giannini, Schiff, and Bates]{rozenblum2020}
