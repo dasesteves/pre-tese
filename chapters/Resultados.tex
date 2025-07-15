@@ -71,23 +71,15 @@ A cost-benefit analysis will be conducted as part of the evaluation to determine
 \end{figure}
 
 \subsection{Key Performance Indicators and Evaluation Scenarios}
+\label{sec:KPIs}
 
-To anchor the evaluation in the concrete operational realities of SCMVV, the pilot study will focus on a set of specific Key Performance Indicators (KPIs) derived from current workflow challenges. The problem of fragmented information systems is a well-documented national challenge in the Portuguese NHS, often described as a "Healthcare Archipelago" where data remains siloed within different institutions and levels of care \cite{goiana2024portuguese, nunes2021articulacao}. This project directly addresses this issue by creating a unified platform. The assessment will be both quantitative and qualitative, targeting measurable improvements in patient safety, operational efficiency, and system integration.
+To anchor the evaluation in the concrete operational realities of SCMVV, the pilot study will focus on a set of specific Key Performance Indicators (KPIs), grounded in the real-world challenges described by the clinical staff. The following scenarios and metrics will be used to quantify the system's impact, contextualized by the broader issues of system fragmentation in the Portuguese NHS \cite{goiana2024portuguese, nunes2021articulacao}.
 
-\subsubsection{Patient Safety KPIs}
-\begin{itemize}
-    \item \textbf{Reduction of Medication Errors due to Data Inconsistency:} A primary goal is to address errors originating from outdated drug information on frontend clients. We will measure the incidence of prescription queries and validation failures specifically linked to mismatched drug codes or the use of non-standardized supplements. The target is a >90\% reduction in this class of error.
-    \item \textbf{Elimination of Manual External Lookups:} The current reliance on external websites (e.g., Simposium) by pharmacists for drug interaction checks is a key symptom of system deficiency. A binary success metric will be the complete elimination of this workaround. Success will be defined as <5\% of pharmacists reporting the need for external lookups during their validation workflow, measured via direct observation and surveys.
-\end{itemize}
+\subsubsection{Patient Safety and Clinical Quality}
+The evaluation will primarily focus on the reduction in medication errors. This will be measured by comparing error rates (e.g., incorrect dosage, wrong medication, missed administrations) from a retrospective analysis of 1,000 prescriptions before the intervention with a prospective analysis of 1,000 prescriptions after implementation. A further metric will be adherence to protocols, assessed by auditing the system's logs to quantify the percentage of prescriptions that fully comply with the integrated clinical decision support rules.
 
-\subsubsection{Operational Efficiency KPIs}
-\begin{itemize}
-    \item \textbf{Automation of the Nursing Medication Administration Record (MAR):} The most significant workflow transformation is expected in nursing. Currently, nurses perform manual, redundant data entry across multiple systems (SNS, SClínico, Sonho, CEGID). The project will introduce a unified interface for this task. The primary KPI will be the time spent on administrative tasks per medication round. Based on preliminary analysis, we project a reduction of 5-10 minutes per round, per nurse, freeing up significant time for direct patient care. A secondary metric will be the rate of data transcription errors, expected to approach zero.
-    \item \textbf{Streamlining Surgical Prescriptions:} The integration of a prescription module within the surgical workflow will be evaluated. The KPI will be the percentage of post-operative medications prescribed directly through the system, aiming for >95\% adoption by the surgical team within the pilot period.
-\end{itemize}
+\subsubsection{Operational Efficiency}
+To measure gains in efficiency, the study will analyze time-in-motion for nursing staff. This involves observing and timing the end-to-end process of medication administration for a sample of 30 cases before and after implementation, from prescription verification to patient delivery. Additionally, the pharmaceutical validation time will be measured by calculating the average time from a physician's prescription entry to its final validation by a pharmacist in the system's backend, comparing the performance against the current multi-system workflow.
 
-\subsubsection{System Integration and Interoperability KPIs}
-\begin{itemize}
-    \item \textbf{Unified Patient Context View:} The system's ability to act as a central hub will be measured by its capacity to present a unified view of the patient, pulling data in real-time from disparate sources. This includes inpatient status and location from \textbf{Sonho}, historical clinical data from \textbf{SClínico}, and insurance details from billing systems like \textbf{ADSE}, a challenge common in the national context \cite{pinto2016identification}. Success will be measured via user satisfaction surveys focusing on the perception of having a "single source of truth".
-    \item \textbf{Real-time Stock and Billing Synchronization:} The system's outbound integration will be critically evaluated. We will measure the success rate and latency of real-time stock level updates to the \textbf{CEGID} logistics system following pharmaceutical validation and administration. The target is a >99.9\% success rate with sub-second latency.
-\end{itemize} 
+\subsubsection{System Integration and Data Integrity}
+The success of the integration will be quantified by measuring the reduction in data redundancy and discrepancies. This will be achieved by performing a comparative analysis of patient records across the integrated systems (SClínico, AIDA, SONHO) before and after implementation, identifying and counting inconsistencies in key data fields (e.g., patient identifiers, active medication lists) to demonstrate a measurable improvement in data coherence, a known challenge in fragmented health information environments \cite{pinto2016identification}. 

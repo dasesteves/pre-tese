@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 17:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  15 JUL 2025 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1670,115 +1670,100 @@ File: images/generated/gantt_chart_detailed.png Graphic file (type bmp)
 
 [9
 
-]
+]) (chapters/Metodologia.tex
 
-[10]) (chapters/Metodologia.tex
-
-[11]
+[10]
 Chapter 4.
 
 
-[12
+[11
 
 ]
 
-[13]
+[12]
 
-LaTeX Warning: Reference `sec:KPIs' on page 14 undefined on input line 43.
+[13]) (chapters/Resultados.tex
 
-
-
-[14]) (chapters/Resultados.tex
-
-[15]
+[14]
 Chapter 5.
 File: images/generated/system_architecture.png Graphic file (type bmp)
 <images/generated/system_architecture.png>
 
 
-[16
+[15
 
 ]
 
-[17]
+[16]
 File: images/generated/error_reduction_dashboard.png Graphic file (type bmp)
 <images/generated/error_reduction_dashboard.png>
 
 
-[18]
+[17]
 File: images/generated/user_satisfaction.png Graphic file (type bmp)
 <images/generated/user_satisfaction.png>
 
 
-[19]
+[18]
 File: images/generated/roi_analysis.png Graphic file (type bmp)
 <images/generated/roi_analysis.png>
 File: images/generated/future_roadmap.png Graphic file (type bmp)
 <images/generated/future_roadmap.png>
 
 
-[20]
+[19]
+
+[20]) (chapters/Discussao.tex
 
 [21]
-
-[22]) (chapters/Discussao.tex
-
-[23]
 Chapter 6.
 
 
-[24
+[22
 
 ]) (chapters/Conclusao.tex
 
-[25]
+[23]
 
-[26]
+[24]
 Chapter 7.
 
 
-[27
+[25
 
 ]) (pre-tese.bbl
 
-[28]
+[26]
 
-[29
+[27
 
 ]
 
+[28]
+
+[29]
+
 [30]
 
-[31]
+[31]) (covers/BackCover.tex
 
 [32]
-
-[33]) (covers/BackCover.tex
-
-[34]
 
 [1]) (pre-tese.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `pre-tese.out' has not changed.
 (rerunfilecheck)             Checksum: 2DDBED5FA506C8C268F11A3EFD830CF2;10561.
  ) 
 Here is how much of TeX's memory you used:
- 39721 strings out of 403337
- 825266 string characters out of 5463040
+ 39720 strings out of 403337
+ 825223 string characters out of 5463040
  1341115 words of memory out of 5000000
- 67428 multiletter control sequences out of 15000+600000
+ 67427 multiletter control sequences out of 15000+600000
  632650 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,10n,119p,1024b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on pre-tese.pdf (45 pages).
+Output written on pre-tese.pdf (43 pages).
