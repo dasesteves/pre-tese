@@ -1,5 +1,15 @@
 # Pré-Tese - Optimization and Standardization of Medication Management Processes in Hospital Environments
 
+## Acesso rápido
+
+- [Ler o PDF da pré-tese](pre-tese.pdf).
+- [Consultar o documento principal](pre-tese.tex) e os [capítulos](chapters/).
+- [Consultar as referências bibliográficas](pre-tese.bib).
+
+Este repositório contém os materiais da pré-tese. A existência de um PDF
+versionado não confirma que tenha sido recompilado a partir da revisão atual
+das fontes, nem substitui a dissertação final.
+
 ## Descrição
 Este projeto contém a estrutura LaTeX para a pré-tese do Mestrado em Engenharia Bioinformática da Universidade do Minho. Para abrir:
 ```
